@@ -1,4 +1,4 @@
-import { AIResult, NotImplementationError, ToolFunc, backendEventable, event } from '@isdk/ai-tool'
+import { AIResult, EventBusName, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
 import { AIModelNameRules, AIProviderSettings } from './llm-settings'
 
@@ -17,7 +17,7 @@ export class LLMProvider extends ToolFunc {
     options: {name: 'options', type: 'any', description: 'the LLM model options'},
   }
   result = 'object'
-  depends = { event }
+  depends = { [EventBusName]: event }
 
   static getByModel(modelName: string) {
     const items = this.items
@@ -76,7 +76,7 @@ export const LLMProviderSchema = {
   rule: {type: ['string', 'RegExp']},
 }
 
-backendEventable(LLMProvider)
+// backendEventable(LLMProvider)
 LLMProvider.defineProperties(LLMProvider, LLMProviderSchema)
 
 export const llm = new LLMProvider('llm')

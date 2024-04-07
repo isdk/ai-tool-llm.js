@@ -14,6 +14,9 @@ model名配置规则，允许RegExp：
 
 一个后端可以支持多种类型的model.
 
+LLMProvider 的函数目的是根据输入产生输出,一种流式JSON Object输出,一种非流式输出。
+通过静态方法`getByModel(modelName: string)` 决定使用的Provider.
+
 ## Refs
 
 -----------------------------------------

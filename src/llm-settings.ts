@@ -21,11 +21,57 @@ export interface AIProviderSettings {
   apiUrl?: string
 }
 
+export enum AIModelQuantType {
+  F32 = 0,
+  F16 = 1,
+  //... use llama.cpp quant type
+  Q4_0 = 2,  // except 1d tensors
+  Q4_1 = 3,  // except 1d tensors
+  Q4_1SomeF16 = 4,  // tok_embeddings.weight and output.weight are F16
+  // Q4_2       = 5,  // support has been removed
+  // Q4_3       = 6,  // support has been removed
+  Q8_0 = 7,  // except 1d tensors
+  Q5_0 = 8,  // except 1d tensors
+  Q5_1 = 9,  // except 1d tensors
+  Q2_K = 10, // except 1d tensors
+  Q3_K_S = 11, // except 1d tensors
+  Q3_K_M = 12, // except 1d tensors
+  Q3_K_L = 13, // except 1d tensors
+  Q4_K_S = 14, // except 1d tensors
+  Q4_K_M = 15, // except 1d tensors
+  Q5_K_S = 16, // except 1d tensors
+  Q5_K_M = 17, // except 1d tensors
+  Q6_K = 18, // except 1d tensors
+  IQ2_XXS = 19, // except 1d tensors
+  IQ2_XS = 20, // except 1d tensors
+  Q2_KS = 21, // except 1d tensors
+  IQ3_XS = 22, // except 1d tensors
+  IQ3_XXS = 23, // except 1d tensors
+  IQ1_S = 24, // except 1d tensors
+  IQ4_NL = 25, // except 1d tensors
+  IQ3_S = 26, // except 1d tensors
+  IQ3_M = 27, // except 1d tensors
+  IQ2_S = 28, // except 1d tensors
+  IQ2_M = 29, // except 1d tensors
+  IQ4_XS = 30, // except 1d tensors
+
+  Guessed = 1024, // not specified in the model file
+}
+
 export interface AIModelSettings {
   name: string
   type: AIModelType|AIModelType[]
+  /**
+   * the model params size in bytes
+   */
+  paramsSize: number
+  /**
+   * the model file size in bytes
+   */
+  size: number
+  quant?: AIModelQuantType
   // the model scale/size: 7b, 13b,...
-  scale: string
+  // scale?: string
   url?: string
   location?:string
   skills?: AIModelSkillName[]

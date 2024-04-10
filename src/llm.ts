@@ -1,6 +1,6 @@
 import { AIResult, EventBusName, NotFoundError, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
-import { AIModelNameRules, AIProviderSettings } from './llm-settings'
+import { AIModelNameRules, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>
@@ -25,11 +25,15 @@ export class LLMProvider extends ToolFunc {
   result = 'object'
   depends = { [EventBusName]: event }
 
-  static getByModel(modelName: string) {
-    const items = this.items
-    for (const name of Object.keys(items)) {
-      const item = items[name]
-      if (item.isModelNameMatched(modelName)) return item
+  static getByModel(modelName?: string) {
+    if (modelName) {
+      const items = this.items
+      for (const name of Object.keys(items)) {
+        const item = items[name]
+        if (item.isModelNameMatched(modelName)) return item
+      }
+    } else {
+      return this.getCurrentProvider()
     }
   }
 
@@ -66,9 +70,9 @@ export class LLMProvider extends ToolFunc {
   }
 
   async func(input: LLMArguments): Promise<AIResult> {
-    const current = LLMProvider.getCurrentProvider()
-    if (current) {
-      return current.func(input)
+    const provider = LLMProvider.getByModel(input.model)
+    if (provider) {
+      return provider.func(input)
     } else {
       throw new NotImplementationError('no current provider')
     }
@@ -125,12 +129,6 @@ export function joinUrl(baseUrl: string, url: string) {
     url = `/${url}`;
   }
   return `${baseUrl}${url}`
-}
-
-export const LLMProviderSchema = {
-  rule: {type: ['string', 'RegExp']},
-  enabled: {type: 'boolean', value: true},
-  url: {type: 'string'},
 }
 
 // backendEventable(LLMProvider)

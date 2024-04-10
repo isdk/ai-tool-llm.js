@@ -66,14 +66,6 @@ export interface LLMArguments {
 
 export type AITextGenerationResult = AIResult<string>
 
-export type AITextGenerationFinishReason =
-  | "stop"
-  | "length"
-  | 'tool_calls'
-  | 'content_filter'
-  | 'function_call'
-  | null;
-
 export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?: Record<string, string>) {
   const result: any = {}
   if (opts) {

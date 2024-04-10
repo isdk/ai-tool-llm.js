@@ -1,13 +1,19 @@
-import { AIResult, EventBusName, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
+import { AIResult, EventBusName, NotFoundError, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
 import { AIModelNameRules, AIProviderSettings } from './llm-settings'
 
 export interface LLMProvider extends AIProviderSettings {
+  listModels?(): Promise<string[]|undefined>
+  updateModel?(modelName: string, model: any): Promise<any>
+  addModel?(modelName: string, model: any): Promise<any>
+  deleteModel?(modelName: string): Promise<any>
 }
 
 const LLMProviders: {[name: string]: LLMProvider} = {}
 
 export class LLMProvider extends ToolFunc {
+  static current?: string
+
   static items = LLMProviders
 
   description = 'run LLM model'
@@ -24,6 +30,12 @@ export class LLMProvider extends ToolFunc {
     for (const name of Object.keys(items)) {
       const item = items[name]
       if (item.isModelNameMatched(modelName)) return item
+    }
+  }
+
+  static getCurrentProvider() {
+    if (LLMProvider.current) {
+      return LLMProvider.get(LLMProvider.current) as LLMProvider
     }
   }
 
@@ -54,7 +66,50 @@ export class LLMProvider extends ToolFunc {
   }
 
   async func(input: LLMArguments): Promise<AIResult> {
-    throw new NotImplementationError
+    const current = LLMProvider.getCurrentProvider()
+    if (current) {
+      return current.func(input)
+    } else {
+      throw new NotImplementationError('no current provider')
+    }
+  }
+
+  listProviders(options?: {filter?: AIModelNameRules, all?: boolean}) {
+    const items = LLMProvider.items
+    const filter = options?.filter
+    const all = options?.all
+    const result = {} as {[name: string]: LLMProvider}
+    for (const [name, item] of Object.entries(items)) {
+      if (all || item.enabled) {
+        if (!filter || item.isModelNameMatched(name, filter)) {
+          result[name] = item
+        }
+      }
+    }
+    return result
+  }
+
+  getCurrentProvider() {
+    return LLMProvider.getCurrentProvider()
+  }
+
+  setCurrentProvider(name: string) {
+    if (LLMProvider.get(name)) {
+      LLMProvider.current = name
+    } else {
+      throw new NotFoundError(`no provider named ${name}`)
+    }
+  }
+
+  async getModelInfo(modelName: string): Promise<{provider?: string; [name:string]:any}|undefined> {
+    const provider = LLMProvider.getByModel(modelName)
+    if (provider) {
+      const result = await provider.getModelInfo(modelName)
+      if (result) {
+        result['provider'] = provider.name
+        return result
+      }
+    }
   }
 }
 
@@ -74,6 +129,8 @@ export function joinUrl(baseUrl: string, url: string) {
 
 export const LLMProviderSchema = {
   rule: {type: ['string', 'RegExp']},
+  enabled: {type: 'boolean', value: true},
+  url: {type: 'string'},
 }
 
 // backendEventable(LLMProvider)

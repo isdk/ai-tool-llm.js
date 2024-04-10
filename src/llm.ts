@@ -1,6 +1,6 @@
 import { AIResult, EventBusName, NotFoundError, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
-import { AIModelNameRules, AIProviderSettings, LLMProviderSchema } from './llm-settings'
+import { AIModelNameRules, AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>
@@ -105,7 +105,7 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getModelInfo(modelName: string): Promise<{provider?: string; [name:string]:any}|undefined> {
+  async getModelInfo(modelName: string): Promise<AIModelSettings|undefined> {
     const provider = LLMProvider.getByModel(modelName)
     if (provider) {
       const result = await provider.getModelInfo(modelName)

@@ -60,23 +60,27 @@ export enum AIModelQuantType {
 
 export interface AIModelSettings {
   name: string
-  type: AIModelType|AIModelType[]
+  type?: AIModelType|AIModelType[]
   /**
    * the model params size in bytes
    */
-  paramsSize: number
+  params_size: number
   /**
-   * the model file size in bytes
+   * the quanted model size in bytes
    */
   size: number
   quant?: AIModelQuantType
+  /**
+   * the content length in train
+   */
+  content_Size?: number
   // the model scale/size: 7b, 13b,...
-  // scale?: string
+  scale?: string
   url?: string
   location?:string
   skills?: AIModelSkillName[]
   provider?: string
-  chatTemplate?: string
+  chat_template?: string
   [name: string]: any
 }
 

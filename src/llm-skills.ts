@@ -29,7 +29,7 @@ export const AIModelPublicSkillNames = [
   'Math',
   'History',
   'Science',
-  'Func',
+  'Tool',
   // 'SeePic',
 ] as const
 export type AIModelPublicSkillName = typeof AIModelPublicSkillNames[number]

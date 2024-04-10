@@ -21,6 +21,12 @@ export interface AITextGenerationOptions extends AIOptions {
   max_tokens?: number | undefined;
 
   /**
+   * Specify the context window size of the model that you have loaded.
+   *
+   */
+  content_size?: number;
+
+  /**
    * Stop sequences to use.
    * Stop sequences are an array of strings or a single string that the model will recognize as end-of-text indicators.
    * The model stops generating more content when it encounters any of these strings.

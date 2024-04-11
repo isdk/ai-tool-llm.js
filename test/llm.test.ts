@@ -1,4 +1,4 @@
-import { LLMProvider } from "../src/llm"
+import { LLMProvider } from "../src/llm-provider"
 
 const testLLMProvider = new LLMProvider('LLMTest', {
   rule: /.test$/

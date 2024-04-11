@@ -1,3 +1,4 @@
+import { AIOptions } from "./llm-options"
 import { AIModelSkillName } from "./llm-skills"
 
 export enum AIModelType {
@@ -59,7 +60,10 @@ export enum AIModelQuantType {
 }
 
 export interface AIModelSettings {
-  name: string
+  /**
+   * the model unique name
+   */
+  id?: string
   type?: AIModelType|AIModelType[]
   /**
    * the model params size in bytes
@@ -81,6 +85,7 @@ export interface AIModelSettings {
   skills?: AIModelSkillName[]
   provider?: string
   chat_template?: string
+  options?: AIOptions
   [name: string]: any
 }
 

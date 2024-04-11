@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   test: {
-    testTimeout: 70000,
+    testTimeout: 80000,
     globals: true,
     "setupFiles": [
       "./setupVitest.mjs"

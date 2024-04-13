@@ -1,4 +1,4 @@
-import { AIResult, EventBusName, NotFoundError, NotImplementationError, ToolFunc, event } from '@isdk/ai-tool'
+import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
 import { AIModelNameRules, AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
@@ -10,6 +10,7 @@ export interface LLMProvider extends AIProviderSettings {
 }
 
 const LLMProviders: {[name: string]: LLMProvider} = {}
+export const LLMProviderName = 'llm'
 
 export class LLMProvider extends ToolFunc {
   static current?: string
@@ -69,6 +70,10 @@ export class LLMProvider extends ToolFunc {
     return false
   }
 
+  isStream(params: ServerFuncParams) {
+    return params?.stream
+  }
+
   async func(input: LLMArguments): Promise<AIResult> {
     const provider = LLMProvider.getByModel(input.model)
     if (provider) {
@@ -101,7 +106,7 @@ export class LLMProvider extends ToolFunc {
     if (LLMProvider.get(name)) {
       LLMProvider.current = name
     } else {
-      throw new NotFoundError(`no provider named ${name}`)
+      throw new NotFoundError(name, 'LLMProvider')
     }
   }
 
@@ -134,4 +139,4 @@ export function joinUrl(baseUrl: string, url: string) {
 // backendEventable(LLMProvider)
 LLMProvider.defineProperties(LLMProvider, LLMProviderSchema)
 
-export const llm = new LLMProvider('llm')
+export const llm = new LLMProvider(LLMProviderName)

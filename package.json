@@ -23,10 +23,13 @@
   },
   "dependencies": {
     "@isdk/ai-tool": "workspace:*",
+    "@isdk/ai-tool-sqlite": "workspace:*",
+    "@isdk/ai-tool-download": "workspace:*",
     "ai": "^3.0.13"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
+    "@huggingface/hub": "^0.14.7",
     "@types/better-sqlite3": "^7.6.9",
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^7.1.1",

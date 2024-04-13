@@ -1,12 +1,13 @@
+import { FileDownloadStatus } from "@isdk/ai-tool-download"
 import { AIOptions } from "./llm-options"
 import { AIModelSkillName } from "./llm-skills"
 
 export enum AIModelType {
-  t2t,  // text to text
-  i2t,  // image to text
-  a2t,  // audio to text
-  t2i,  // text to image
-  t2a,  // text to audio
+  chat,  // text to text
+  vision,  // image to text
+  stt,  // audio to text
+  drawing,  // text to image
+  tts,  // text to audio
 }
 
 export type AIModelNameRuleFn = (name: string) => boolean
@@ -63,16 +64,17 @@ export interface AIModelSettings {
   /**
    * the model unique name
    */
-  id?: string
-  type?: AIModelType|AIModelType[]
+  name?: string
+  type?: AIModelType
+  supports?: AIModelType|AIModelType[]
   /**
    * the model params size in bytes
    */
-  params_size: number
+  params_size?: number
   /**
    * the quanted model size in bytes
    */
-  size: number
+  size?: number
   quant?: AIModelQuantType
   /**
    * the content length in train
@@ -80,12 +82,31 @@ export interface AIModelSettings {
   content_Size?: number
   // the model scale/size: 7b, 13b,...
   scale?: string
+  /**
+   * the remote url to download the model
+   */
   url?: string
+  /**
+   * hugging-face repo name
+   */
+  hf_repo?: string
+  hf_path?: string
   location?:string
   skills?: AIModelSkillName[]
   provider?: string
+  featured?: boolean
+  likes?: number
+  downloads?: number
+  title?: string
+  description?: string
+  author?: string
+  license?: string
+  logo?: string
+  file_size?: number
+  downloaded?: boolean
+  downloading?: FileDownloadStatus
   chat_template?: string
-  options?: AIOptions
+  config?: AIOptions
   [name: string]: any
 }
 

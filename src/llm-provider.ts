@@ -1,6 +1,6 @@
-import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event } from '@isdk/ai-tool'
+import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event, type AIModelNameRules } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
-import { AIModelNameRules, AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
+import { AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>

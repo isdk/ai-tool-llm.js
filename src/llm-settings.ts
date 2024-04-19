@@ -1,6 +1,7 @@
 import { FileDownloadStatus } from "@isdk/ai-tool-download"
 import { AIOptions } from "./llm-options"
 import { AIModelSkillName } from "./llm-skills"
+import { AIModelNameRule, AIModelNameRules } from "@isdk/ai-tool"
 
 export enum AIModelType {
   chat,  // text to text
@@ -9,11 +10,6 @@ export enum AIModelType {
   drawing,  // text to image
   tts,  // text to audio
 }
-
-export type AIModelNameRuleFn = (name: string) => boolean
-
-export type AIModelNameRule = string|RegExp
-export type AIModelNameRules = AIModelNameRule|AIModelNameRule[]|AIModelNameRuleFn
 
 export interface AIProviderSettings {
   rule: AIModelNameRules

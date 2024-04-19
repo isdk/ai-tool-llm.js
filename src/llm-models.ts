@@ -2,12 +2,12 @@ import path from 'path'
 import fs from 'fs'
 import {
   AlreadyExistsError,
-  EventName,
-  event,
-  eventServer,
-  isValidFilepath,
-  throwError,
-  xxhashAsStr,
+  // EventName,
+  // event,
+  // eventServer,
+  // isValidFilepath,
+  // throwError,
+  // xxhashAsStr,
   ResServerTools,
   ResServerFuncParams,
   NotFoundError,
@@ -27,7 +27,7 @@ import { LLMProviderName, llm } from './llm-provider';
 import { LLMArguments } from './llm-options';
 
 const MODELS_DB_NAME = '.modelsdb'
-const eventBus = event.runSync()
+// const eventBus = event.runSync()
 
 interface LlmModelsFuncParams extends AIModelSettings, ResServerFuncParams {
   _id?: string

@@ -200,4 +200,3 @@ LlmModelsFunc.defineProperties(LlmModelsFunc, {
   rootDir: { type: 'string' },
   usingMirror: { type: 'boolean' },
 })
-

@@ -1,4 +1,4 @@
-import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event, type AIModelNameRules } from '@isdk/ai-tool'
+import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event, type AIModelNameRules, isModelNameMatched } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
 import { AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
@@ -46,28 +46,7 @@ export class LLMProvider extends ToolFunc {
 
   isModelNameMatched(modelName: string, rule?: AIModelNameRules) {
     if (!rule) {rule = this.rule}
-    switch (typeof rule) {
-      case 'string':
-        if (modelName === rule) {return true}
-        break
-      case 'object':
-        if (Array.isArray(rule)) {
-          for (const item of rule) {
-            if (typeof item === 'string') {
-              if (modelName === item) {return true}
-            } else if (item instanceof RegExp) {
-              if (item.test(modelName)) {return true}
-            }
-          }
-        } else if (rule instanceof RegExp) {
-          if (rule.test(modelName)) {return true}
-        }
-        break
-      case 'function':
-        if (rule.call(this, modelName)) {return true}
-        break
-    }
-    return false
+    return isModelNameMatched.call(this, modelName, rule)
   }
 
   isStream(params: ServerFuncParams) {

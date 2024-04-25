@@ -34,6 +34,7 @@ interface LlmModelsFuncParams extends AIModelSettings, ResServerFuncParams {
   query?: string
   size?: number
   page?: number
+  overwrite?: boolean
 }
 
 export class LlmModelsFunc extends ResServerTools {
@@ -179,10 +180,12 @@ export class LlmModelsFunc extends ResServerTools {
 
     const url = this.getUrl(model)
     const filepath = this.getPath(model)
+    const overwrite = model.overwrite ?? false
     if (url && filepath) {
       const result = await download.post({
         url,
         filepath,
+        overwrite,
         start: true,
       })
       return result;

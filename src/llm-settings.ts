@@ -58,7 +58,7 @@ export enum AIModelQuantType {
 
 export interface AIModelSettings {
   /**
-   * the model unique name
+   * the model unique name, include extension name
    */
   name?: string
   type?: AIModelType
@@ -75,8 +75,8 @@ export interface AIModelSettings {
   /**
    * the content length in train
    */
-  content_Size?: number
-  // the model scale/size: 7b, 13b,...
+  content_size?: number
+  // the model params scale/size: 7b, 13b,...
   scale?: string
   /**
    * the remote url to download the model

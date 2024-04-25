@@ -1,6 +1,7 @@
 import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event, type AIModelNameRules, isModelNameMatched } from '@isdk/ai-tool'
 import { LLMArguments } from './llm-options'
 import { AIModelSettings, AIProviderSettings, LLMProviderSchema } from './llm-settings'
+import { paramsSizeToScaleStr } from './utils'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>
@@ -95,6 +96,9 @@ export class LLMProvider extends ToolFunc {
       const result = await provider.getModelInfo(modelName)
       if (result) {
         result['provider'] = provider.name
+        if (result.params_size && !result.scale) {
+          result.scale = paramsSizeToScaleStr(result.params_size)
+        }
         return result
       }
     }

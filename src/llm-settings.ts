@@ -52,13 +52,33 @@ export enum AIModelQuantType {
   IQ2_S = 28, // except 1d tensors
   IQ2_M = 29, // except 1d tensors
   IQ4_XS = 30, // except 1d tensors
+  IQ1_M  = 31, // except 1d tensors
 
   Guessed = 1024, // not specified in the model file
 }
 
-export interface AIModelSettings {
+export interface AIModelFileSettings {
   /**
    * the model unique name, include extension name
+   */
+  file_name?: string
+  /**
+   * the quanted model size in bytes
+   */
+  size?: number
+  file_size?: number
+  quant?: AIModelQuantType
+  location?: string
+  // the split file index
+  index?: number
+  count?: number
+  hf_path?: string
+  [name: string]: any
+}
+
+export interface AIModelSimpleSettings {
+  /**
+   * the model unique name
    */
   name?: string
   type?: AIModelType
@@ -67,11 +87,6 @@ export interface AIModelSettings {
    * the model params size in bytes
    */
   params_size?: number
-  /**
-   * the quanted model size in bytes
-   */
-  size?: number
-  quant?: AIModelQuantType
   /**
    * the content length in train
    */
@@ -86,8 +101,7 @@ export interface AIModelSettings {
    * hugging-face repo name
    */
   hf_repo?: string
-  hf_path?: string
-  location?:string
+  // hf_path?: string
   skills?: AIModelSkillName[]
   provider?: string
   featured?: boolean
@@ -98,12 +112,20 @@ export interface AIModelSettings {
   author?: string
   license?: string
   logo?: string
-  file_size?: number
   downloaded?: boolean
   downloading?: FileDownloadStatus
   chat_template?: string
   config?: AIOptions
+  language?: string[]
+  createdAt?: Date
+  updatedAt?: Date
   [name: string]: any
+}
+
+export type AIModelParams = AIModelSimpleSettings & AIModelFileSettings
+
+export interface AIModelSettings extends AIModelSimpleSettings {
+  files?: AIModelFileSettings[]
 }
 
 // the projector model

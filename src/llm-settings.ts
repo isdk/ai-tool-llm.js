@@ -72,13 +72,18 @@ export interface AIModelFileSettings {
   // the split file index
   index?: number
   count?: number
+  url?: string
   hf_path?: string
+  downloaded?: boolean
+  downloading?: FileDownloadStatus
   [name: string]: any
 }
 
 export interface AIModelSimpleSettings {
+  // the unique id in db: author/name
+  _id?: string
   /**
-   * the model unique name
+   * the model unique name, but not the unique in db
    */
   name?: string
   type?: AIModelType
@@ -112,8 +117,6 @@ export interface AIModelSimpleSettings {
   author?: string
   license?: string
   logo?: string
-  downloaded?: boolean
-  downloading?: FileDownloadStatus
   chat_template?: string
   config?: AIOptions
   language?: string[]

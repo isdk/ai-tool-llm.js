@@ -4,8 +4,8 @@ export default defineConfig({
   test: {
     testTimeout: 80000,
     globals: true,
-    "setupFiles": [
-      "./setupVitest.mjs"
-    ],
+    // "setupFiles": [
+    //   "./setupVitest.mjs"
+    // ],
   },
 })

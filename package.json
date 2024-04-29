@@ -28,12 +28,12 @@
     "@isdk/ai-tool-sqlite": "workspace:*"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.0",
-    "@huggingface/hub": "^0.14.7",
-    "@types/better-sqlite3": "^7.6.9",
+    "@antfu/eslint-config": "^2.16.0",
+    "@huggingface/hub": "^0.14.10",
+    "@types/better-sqlite3": "^7.6.10",
     "@types/jest": "^29.5.12",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "bumpp": "^9.4.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "bumpp": "^9.4.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tsdoc": "^0.2.17",
@@ -41,14 +41,14 @@
     "fastify": "^4.26.2",
     "prettier": "^3.2.5",
     "tsup": "^8.0.2",
-    "tsx": "^4.7.2",
-    "typedoc": "^0.25.11",
+    "tsx": "^4.7.3",
+    "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "^3.17.1",
-    "typescript": "^5.4.2",
-    "vite": "^5.1.5",
-    "vitest": "^1.3.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.2",
     "vitest-fetch-mock": "^0.2.2",
-    "zod": "^3.22.4"
+    "zod": "^3.23.5"
   },
   "files": [
     "docs",

@@ -49,7 +49,6 @@ describe('LlmModelsFunc server api', () => {
   const res = new LlmModelsFunc(FUNC_NAME, {rootDir, dbPath, usingMirror: true})
 
   beforeAll(async () => {
-    console.log('🚀 ~ beforeAll ~ res.dbPath:', res.dbPath)
     server.get('/api', async function(request, reply){
       reply.send(ResServerTools)
     })

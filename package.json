@@ -2,7 +2,7 @@
   "name": "@isdk/ai-tool-llm",
   "version": "0.0.1",
   "author": "Riceball LEE <snowyu.lee@gmail.com>",
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
     ".": "./dist/index.mjs"
@@ -25,6 +25,7 @@
   "dependencies": {
     "@isdk/ai-tool": "workspace:*",
     "@isdk/ai-tool-download": "workspace:*",
+    "@isdk/ai-tool-prompt": "workspace:*",
     "@isdk/ai-tool-sqlite": "workspace:*"
   },
   "devDependencies": {

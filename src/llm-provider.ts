@@ -1,4 +1,17 @@
-import { AIResult, EventBusName, NotFoundError, NotImplementationError, type ServerFuncParams, ToolFunc, event, type AIModelNameRules, isModelNameMatched } from '@isdk/ai-tool'
+import {
+  AIResult,
+  EventBusName,
+  event,
+  isModelNameMatched,
+  NotFoundError,
+  NotImplementationError,
+  ToolFunc,
+  type AIChatMessageParam,
+  type ServerFuncParams,
+  type AIModelNameRules,
+
+} from '@isdk/ai-tool'
+import { AIPromptFitResult, AIPromptResult, AIPromptsName, PromptTemplateData, formatPrompt } from '@isdk/ai-tool-prompt'
 import { LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 import { paramsSizeToScaleStr } from './utils'
@@ -90,7 +103,7 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getModelInfo(modelName: string): Promise<AIModelParams|undefined> {
+  async getModelInfo(modelName?: string): Promise<AIModelParams|undefined> {
     const provider = LLMProvider.getByModel(modelName)
     if (provider) {
       const result = await provider.getModelInfo(modelName)
@@ -103,8 +116,80 @@ export class LLMProvider extends ToolFunc {
       }
     }
   }
-}
 
+  async getChatTemplate(modelInfo?: AIModelParams|string, requiredDefault?: boolean) {
+    let modelName: string|undefined = modelInfo as string
+    if (!modelInfo || typeof modelInfo === 'string') {
+      modelInfo = await this.getModelInfo(modelInfo)
+    } else {
+      modelName = modelInfo.name
+    }
+    let chatTemplate: AIPromptResult | undefined
+    const prompts = ToolFunc.get(AIPromptsName)
+    if (modelName) {
+      if (prompts) {
+        const promptInfo = await prompts.getPrompt({model: modelName}) as AIPromptResult
+        if (promptInfo) {
+          chatTemplate = promptInfo
+        }
+      }
+    }
+    if (!chatTemplate && modelInfo?.chat_template) {
+      chatTemplate = {
+        prompt: {
+          template: modelInfo.chat_template,
+          type: 'system',
+          templateFormat: 'hf',
+        }
+      } as AIPromptResult
+    }
+    if (!chatTemplate && requiredDefault) {
+      chatTemplate = await prompts.getDefaultPrompt() as AIPromptResult
+    }
+
+    return chatTemplate
+  }
+
+  async formatPrompt(
+    messages: AIChatMessageParam[],
+    modelInfo?: AIModelParams|string,
+    options: {
+      defaultTemplate?: boolean,
+      add_generation_prompt?: boolean,
+      chatTemplate?: AIPromptResult,
+    } = {}
+  ) {
+    let chatTemplate: string|AIPromptResult|undefined = options.chatTemplate
+    if (!modelInfo || typeof modelInfo === 'string') {
+      modelInfo = await this.getModelInfo(modelInfo)
+    }
+    const add_generation_prompt = options.add_generation_prompt ?? true
+    const data: PromptTemplateData = {messages, add_generation_prompt, bos_token: ''}
+    if (modelInfo) {
+      if (modelInfo.bos_token) {data.bos_token = modelInfo.bos_token}
+      if (modelInfo.eos_token) {data.eos_token = modelInfo.eos_token}
+      if (modelInfo.eot_token) {data.eot_token = modelInfo.eot_token}
+    }
+    if (!chatTemplate) {
+      const defaultTemplate = options.defaultTemplate ?? true
+      chatTemplate = await this.getChatTemplate(modelInfo, defaultTemplate)
+      if (chatTemplate?.version) {
+        let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
+        if (Array.isArray(version)) {
+          const isDefault = version.indexOf('@')
+          version = isDefault ? '@' : version[0]
+        }
+        if (version) {
+          data.version = version
+        }
+      }
+    }
+    if (chatTemplate) {
+      options.chatTemplate = chatTemplate
+      return await formatPrompt(data, chatTemplate.prompt)
+    }
+  }
+}
 
 export function joinUrl(baseUrl: string, url: string) {
   // ensure base path ends without a slash

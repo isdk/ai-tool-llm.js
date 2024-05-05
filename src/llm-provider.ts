@@ -11,7 +11,7 @@ import {
   type AIModelNameRules,
 
 } from '@isdk/ai-tool'
-import { AIPromptFitResult, AIPromptResult, AIPromptsName, PromptTemplateData, formatPrompt } from '@isdk/ai-tool-prompt'
+import { AIPromptFitResult, AIPromptResult, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt } from '@isdk/ai-tool-prompt'
 import { LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 import { paramsSizeToScaleStr } from './utils'
@@ -117,7 +117,7 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getChatTemplate(modelInfo?: AIModelParams|string, requiredDefault?: boolean) {
+  async getChatTemplate(modelInfo?: AIModelParams|string, options: {defaultTemplate?: boolean, type?: AIPromptType} = {}) {
     let modelName: string|undefined = modelInfo as string
     if (!modelInfo || typeof modelInfo === 'string') {
       modelInfo = await this.getModelInfo(modelInfo)
@@ -128,7 +128,8 @@ export class LLMProvider extends ToolFunc {
     const prompts = ToolFunc.get(AIPromptsName)
     if (modelName) {
       if (prompts) {
-        const promptInfo = await prompts.getPrompt({model: modelName}) as AIPromptResult
+        const type = options.type ?? 'system'
+        const promptInfo = await prompts.getPrompt({model: modelName, type}) as AIPromptResult
         if (promptInfo) {
           chatTemplate = promptInfo
         }
@@ -143,6 +144,7 @@ export class LLMProvider extends ToolFunc {
         }
       } as AIPromptResult
     }
+    const requiredDefault = options.defaultTemplate ?? true
     if (!chatTemplate && requiredDefault) {
       chatTemplate = await prompts.getDefaultPrompt() as AIPromptResult
     }
@@ -157,6 +159,7 @@ export class LLMProvider extends ToolFunc {
       defaultTemplate?: boolean,
       add_generation_prompt?: boolean,
       chatTemplate?: AIPromptResult,
+      type?: AIPromptType,
     } = {}
   ) {
     let chatTemplate: string|AIPromptResult|undefined = options.chatTemplate
@@ -171,8 +174,7 @@ export class LLMProvider extends ToolFunc {
       if (modelInfo.eot_token) {data.eot_token = modelInfo.eot_token}
     }
     if (!chatTemplate) {
-      const defaultTemplate = options.defaultTemplate ?? true
-      chatTemplate = await this.getChatTemplate(modelInfo, defaultTemplate)
+      chatTemplate = await this.getChatTemplate(modelInfo, options)
       if (chatTemplate?.version) {
         let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
         if (Array.isArray(version)) {

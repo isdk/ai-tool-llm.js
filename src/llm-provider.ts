@@ -11,7 +11,7 @@ import {
   type AIModelNameRules,
 
 } from '@isdk/ai-tool'
-import { AIPromptFitResult, AIPromptResult, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt } from '@isdk/ai-tool-prompt'
+import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
 import { LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 import { paramsSizeToScaleStr } from './utils'
@@ -190,6 +190,10 @@ export class LLMProvider extends ToolFunc {
       options.chatTemplate = chatTemplate
       return await formatPrompt(data, chatTemplate.prompt)
     }
+  }
+
+  getDefaultParameters(chatTemplate: AIPromptSettings, model: string) {
+    return getLLMParameters(chatTemplate, model)
   }
 }
 

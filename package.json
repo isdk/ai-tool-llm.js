@@ -26,7 +26,8 @@
     "@isdk/ai-tool": "workspace:*",
     "@isdk/ai-tool-download": "workspace:*",
     "@isdk/ai-tool-prompt": "workspace:*",
-    "@isdk/ai-tool-sqlite": "workspace:*"
+    "@isdk/ai-tool-sqlite": "workspace:*",
+    "radash": "^12.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.0",

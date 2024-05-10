@@ -4,6 +4,15 @@ export interface AIOptions {
   [name: string]: any
 }
 
+const AIResponseFormatTypes = ['json_object', 'json_array'] as const
+
+export type AIResponseFormatType = typeof AIResponseFormatTypes[number] | (string & { })
+
+export interface AIResponseFormat {
+  type: AIResponseFormatType
+  schema?: any
+}
+
 export interface AITextGenerationOptions extends AIOptions {
   /**
    * Adjust the randomness of the generated text.
@@ -62,6 +71,8 @@ export interface AITextGenerationOptions extends AIOptions {
   trim?: boolean;
 
   stream?: boolean
+
+  response_format?: AIResponseFormat
 }
 
 export interface LLMArguments {

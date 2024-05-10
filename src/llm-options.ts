@@ -1,3 +1,4 @@
+import {get as getByPath, set as setByPath } from 'radash'
 import { AIResult, } from "@isdk/ai-tool";
 
 export interface AIOptions {
@@ -83,19 +84,38 @@ export interface LLMArguments {
 
 export type AITextGenerationResult = AIResult<string>
 
+/**
+ * Maps properties from the provided options object to a new object according to the mappings defined in AIOptionsMap.
+ * Supports both simple property names and paths (e.g., 'foo.bar') for nested properties.
+ *
+ * @param {TAIOptions | undefined} opts - The original options object whose properties (including nested ones) will be copied to the new object based on the mapping.
+ * @param {Record<string, string> | undefined} AIOptionsMap - A mapping table defining how properties (or paths) in opts map to properties in the target object.
+ *
+ * @returns {TAIOptions} A new object containing properties copied from opts based on the defined mappings, including support for nested properties.
+ *
+ * @example
+ * const originalOpts = { user: { name: 'Alice', age: 30 }, active: true };
+ * const mapping = { 'user.name': 'userName', 'active': 'isActive' };
+ * const mappedOpts = mapApiOptions(originalOpts, mapping);
+ * // mappedOpts is now { userName: 'Alice', isActive: true }
+ */
 export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?: Record<string, string>) {
-  const result: any = {}
+  let result: any = {}
   if (opts) {
-    for (const name in opts) {
-      const v = opts[name]
-      if (v == null) {continue}
-      const n = AIOptionsMap?.[name] ?? name
-      result[n] = v
+    if (AIOptionsMap) {
+      for (const srcName in AIOptionsMap) {
+        const destName = AIOptionsMap[srcName]
+        const v = getByPath(opts, srcName)
+        if (v != null) {
+          result = setByPath(result, destName, v)
+        }
+      }
     }
   }
   return result as TAIOptions
 }
 
+// used to reverse AIOptionsMap
 export const flip = (data: Record<string, string>) => Object.fromEntries(
   Object
     .entries(data)

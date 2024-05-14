@@ -1,4 +1,4 @@
-import {get as getByPath, set as setByPath } from 'radash'
+import {get as getByPath, set as setByPath } from 'lodash-es'
 import { AIResult, } from "@isdk/ai-tool";
 
 export interface AIOptions {

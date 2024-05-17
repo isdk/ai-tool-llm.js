@@ -1,4 +1,4 @@
-import {get as getByPath, set as setByPath } from 'lodash-es'
+import {get as getByPath, omit, set as setByPath } from 'lodash-es'
 import { AIResult, } from "@isdk/ai-tool";
 
 export interface AIOptions {
@@ -100,7 +100,7 @@ export type AITextGenerationResult = AIResult<string>
  * // mappedOpts is now { userName: 'Alice', isActive: true }
  */
 export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?: Record<string, string>) {
-  let result: any = {}
+  let result: any = omit(opts as any, Object.keys(AIOptionsMap || {}))
   if (opts) {
     if (AIOptionsMap) {
       for (const srcName in AIOptionsMap) {

@@ -13,24 +13,24 @@ describe('mapApiOptions', () => {
     expect(result).toEqual({ mappedFoo: 'bar', mappedBaz: 'qux' });
   });
 
-  it('should not include options that are not present in the mapping', () => {
+  it('should include options that are not present in the mapping', () => {
     const options = { foo: 'bar', baz: 'qux' };
     const mapping = { foo: 'mappedFoo' };
     const result = mapApiOptions(options, mapping);
-    expect(result).toEqual({ mappedFoo: 'bar' });
+    expect(result).toEqual({ mappedFoo: 'bar', baz: 'qux' });
   });
 
   it('should handle nested options using dot notation in the mapping', () => {
     const options = { nested: { foo: 'bar', baz: 'qux' } };
     const mapping = { 'nested.foo': 'mappedNestedFoo' };
     const result = mapApiOptions(options, mapping);
-    expect(result).toEqual({ 'mappedNestedFoo': 'bar' });
+    expect(result).toEqual({ 'mappedNestedFoo': 'bar', nested: {baz: 'qux'} });
   });
 
   it('should not include nested options that are not present in the mapping', () => {
     const options = { nested: { foo: 'bar', baz: 'qux' } };
     const mapping = { 'nested.baz': 'mappedNestedBaz' };
     const result = mapApiOptions(options, mapping);
-    expect(result).toEqual({ 'mappedNestedBaz': 'qux' });
+    expect(result).toEqual({ 'mappedNestedBaz': 'qux', nested: {foo: 'bar'} });
   });
 });

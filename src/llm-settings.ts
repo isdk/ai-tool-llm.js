@@ -9,6 +9,7 @@ export enum AIModelType {
   stt,  // audio to text
   drawing,  // text to image
   tts,  // text to audio
+  embedding,
 }
 
 export interface AIProviderSettings {

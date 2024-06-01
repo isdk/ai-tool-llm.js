@@ -68,7 +68,7 @@ export class LLMProvider extends ToolFunc {
   }
 
   async func(input: LLMArguments): Promise<AIResult> {
-    const provider = LLMProvider.getByModel(input.model)
+    const provider = input.provider ? LLMProvider.get(input.provider) as LLMProvider : LLMProvider.getByModel(input.model)
     if (provider) {
       return provider.func(input)
     } else {

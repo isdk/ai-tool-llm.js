@@ -80,6 +80,7 @@ export interface LLMArguments {
   model?: string
   value?: any
   options?: AIOptions
+  provider?: string
 }
 
 export type AITextGenerationResult = AIResult<string>

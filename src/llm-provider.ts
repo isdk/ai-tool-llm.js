@@ -125,17 +125,17 @@ export class LLMProvider extends ToolFunc {
       modelName = modelInfo.name
     }
     let chatTemplate: AIPromptResult | undefined
-    const prompts = ToolFunc.get(AIPromptsName)
+    const promptsTool = ToolFunc.get(AIPromptsName)
     if (modelName) {
-      if (prompts) {
+      if (promptsTool) {
         const type = options.type ?? 'system'
-        const promptInfo = await prompts.getPrompt({model: modelName, type}) as AIPromptResult
+        const promptInfo = await promptsTool.getPrompt({model: modelName, type}) as AIPromptResult
         if (promptInfo) {
           chatTemplate = promptInfo
         }
       }
     }
-    if (!chatTemplate && modelInfo?.chat_template) {
+    if ((!chatTemplate || chatTemplate.prompt.priority! < 0) && modelInfo?.chat_template) {
       chatTemplate = {
         prompt: {
           template: modelInfo.chat_template,
@@ -146,7 +146,7 @@ export class LLMProvider extends ToolFunc {
     }
     const requiredDefault = options.defaultTemplate ?? true
     if (!chatTemplate && requiredDefault) {
-      chatTemplate = await prompts.getDefaultPrompt() as AIPromptResult
+      chatTemplate = await promptsTool.getDefaultPrompt() as AIPromptResult
     }
 
     return chatTemplate

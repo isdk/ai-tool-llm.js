@@ -3,6 +3,9 @@ import { AIOptions } from "./llm-options"
 import { AIModelSkillName } from "./llm-skills"
 import { AIModelNameRule, AIModelNameRules } from "@isdk/ai-tool"
 
+export const AIModelSources = ['huggingface'] as const
+export type AIModelSource = (typeof AIModelSources[number]) & string
+
 export enum AIModelType {
   chat,  // text to text
   vision,  // image to text
@@ -89,6 +92,7 @@ export interface AIModelSimpleSettings {
   name?: string
   type?: AIModelType
   supports?: AIModelType|AIModelType[]
+  source?: AIModelSource
   /**
    * the model params size in bytes
    */

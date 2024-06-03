@@ -1,6 +1,5 @@
 // @vitest-environment node
 import fastify from 'fastify'
-import fs from 'fs'
 import path from 'path'
 import EventSource from 'eventsource'
 global.EventSource = EventSource as any
@@ -31,7 +30,6 @@ const FUNC_NAME = 'llm.models'
 // const dbPath = '/tmp/aikvsqlite-test.db'
 const dbPath = ':memory:'
 const rootDir = path.resolve (__dirname, '..', 'models')
-
 
 const eventBus4Client = new EventToolFunc(EventBusName)
 // the event-bus for server

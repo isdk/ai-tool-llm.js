@@ -127,6 +127,8 @@ export interface AIModelSimpleSettings {
   language?: string[]
   createdAt?: Date
   updatedAt?: Date
+  // which means some files are downloaded
+  downloaded?: boolean
   [name: string]: any
 }
 

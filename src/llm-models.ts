@@ -17,7 +17,7 @@ import {
 } from "@isdk/ai-tool"
 
 import { KVSqliteResFunc, KVSqliteResFuncParams,  } from "@isdk/ai-tool-sqlite"
-import { DownloadName, download } from '@isdk/ai-tool-download'
+import { DownloadName, DownloadStatusEventName, FileDownloadStatus, download } from '@isdk/ai-tool-download'
 
 import { AIModelFileSettings, AIModelQuantType, AIModelSettings } from './llm-settings'
 import { getHFUrl } from './utils'
@@ -48,53 +48,41 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
     if (!rootDir) {throw new CommonError('rootDir is required', 'LlmModelsFunc', ErrorCode.InvalidArgument)}
     download.rootDir = rootDir
     if (!options.dbPath) {options.dbPath = path.join(rootDir, MODELS_DB_NAME)}
+    if (!options.initDir) {options.initDir = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', 'models')} //, 'gguf-models.json'
 
     super(name, options)
   }
 
-  initDB() {
-    const filename = path.resolve(this.rootDir!, '..', 'models', 'gguf-models.json');
-    if (fs.existsSync(filename)) {
-      const configs = JSON.parse(fs.readFileSync(filename, 'utf8'));
-      this.db.bulkDocs(configs);
+  getDocsFromDir(dir: string) {
+    const docs = super.getDocsFromDir(dir).flat()
+    for (const doc of docs) {
+      const model = doc as AIModelSettings
+      this.verifyFileExists(model)
     }
+    return docs
   }
 
-  verifyDownloaded(model: AIModelSettings) {
-    // for (const model of models) {
-      const downloaded = model.downloaded
-      if (downloaded) {
-        if (model.location) {
-          const location = model.location ?? path.join(this.rootDir!, model._id!)
-          if (fs.existsSync(location)) {
-            if (model.file_size) {
-              const stat = fs.statSync(location)
-              if (stat.size !== model.file_size) {
-                console.warn(model._id, 'file size not match', location)
-              } else {
-                model.location = location
-              }
-            }
-          } else {
-            console.error(model._id, 'model location not exists', location)
-            if (model.location) delete model.location
-            model.downloaded = false
-          }
-        }
-      }
-    // }
+  verifyFileExists(model: AIModelSettings) {
+    let changed: boolean|undefined
+    const rootDir = this.rootDir!
+    for (const file of model.files!) {
+      const opts = {rootDir, changed: false}
+      verifyModelFileExists(file, opts)
+      if (opts.changed) {changed = true}
+    }
+    return changed
   }
 
   isStream(params: ServerFuncParams) {
     return params?.stream
   }
 
-  getFileInfo(id: string, quant: AIModelQuantType) {
-    const model = this.db.get(id)
+  getFileInfo(id: string, quant: AIModelQuantType, model?: AIModelSettings) {
+    if (!model) {model = this.db.get(id)}
     if (!model) {
       throw new NotFoundError(id, this.name + '.getFileInfo')
     }
-    const fileInfo = findModelFileByQuant(model.files, quant) as AIModelFileSettings
+    const fileInfo = findModelFileByQuant(model.files!, quant) as AIModelFileSettings
     if (!fileInfo) {
       throw new NotFoundError(`${id}.${quant}`, this.name + '.getFileInfo')
     }
@@ -133,11 +121,11 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
   }
 
   put(model: LlmModelsFuncParams) {
-    const id = model.id
     const val = model.val
+    const id = model.id ?? val?._id
     if (id && val) {
       val._id = id
-      this.verifyDownloaded(val)
+      this.verifyFileExists(val)
     }
     return super.put(model)
   }
@@ -158,32 +146,35 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
 
     const model = this.db.get(id) as AIModelSettings
 
+    this.verifyFileExists(model)
+
     if (!model) {
       throw new NotFoundError(id, this.name + '._getUrlByParams')
     }
 
-    const file = this.getFileInfo(id, quant)
+    const file = this.getFileInfo(id, quant, model)
 
     const url = this.getUrl(file, quant)
     const filepath = this.getPath(file, quant)
     if (!url || !filepath) {
       throw new CommonError('Can not get url or filepath', this.name + '._getUrlByParams', ErrorCode.InvalidArgument)
     }
-    return {url, filepath, file, id, quant}
+    return {url, filepath, file, id, quant, model}
   }
 
-  async $getUrl(params: LlmModelsFuncParams) {
-    const {url, filepath} = await this._getUrlByParams(params)
-    return {url, filepath}
+  // get a file info by model id and quant
+  async $getFileInfo(params: LlmModelsFuncParams) {
+    const result = await this._getUrlByParams(params)
+    return result
   }
 
   async $download(params: LlmModelsFuncParams) {
     let {overwrite} = params
 
-    const {url, filepath, file, id, quant} = await this._getUrlByParams(params)
+    const {url, filepath, file, model} = await this._getUrlByParams(params)
 
     if (file.downloaded) {
-      throw new AlreadyExistsError(`${id}.${quant}`, this.name + '.download')
+      throw new AlreadyExistsError(`file "${filepath}"`, this.name + '.download')
     }
 
     overwrite = overwrite ?? false
@@ -193,6 +184,17 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
       overwrite,
       start: true,
     })
+
+    if (result?.id) {
+      const that = this
+      download.on(DownloadStatusEventName+':'+result.id, function(_name: string, status: FileDownloadStatus, idInfo: {url: string, id: string, filepath: string}) {
+        if (status === 'completed') {
+          file.downloaded = true
+          file.location = path.resolve(download.rootDir!, idInfo.filepath)
+          that.put({val: model as any})
+        }
+      })
+    }
     return result;
   }
 
@@ -205,3 +207,60 @@ LlmModelsFunc.defineProperties(LlmModelsFunc, {
   rootDir: { type: 'string' },
   usingMirror: { type: 'boolean' },
 })
+
+function isSameFileSize(location: string, file: AIModelFileSettings) {
+  if (file.file_size) {
+    const stat = fs.statSync(location)
+    if (stat.size !== file.file_size) {
+      console.warn(file.file_name, 'file size not match', location)
+      return false
+    }
+  }
+}
+
+function verifyModelFileExists(file: AIModelFileSettings|AIModelFileSettings[], options: {rootDir: string, changed?: boolean}) {
+  const {rootDir} = options
+  let isExists: boolean|undefined
+  if (Array.isArray(file)) {
+    for (const f of file) {
+      isExists = verifyModelFileExists(f, options)
+      if (!isExists) {break}
+    }
+  } else {
+    const defaultLocation = path.resolve(rootDir, file.file_name!)
+    const location = file.location ?? defaultLocation
+    isExists = fs.existsSync(location)
+    if (isExists) {
+      if (isSameFileSize(location, file) === false) {
+        isExists = false
+      } else {
+        file.downloaded = true
+        if (file.location !== location) {
+          file.location = location
+          options.changed = true
+        }
+      }
+    } else {
+      if (file.location) {
+        options.changed = true
+        console.error('verifyModelFileExists:', file.file_name, 'model location not exists', location)
+        delete file.location
+        if (location !== defaultLocation) {
+          isExists = fs.existsSync(defaultLocation)
+          if (isExists) {
+            if (isSameFileSize(defaultLocation, file) === false) {
+              isExists = false
+            } else {
+              file.location = defaultLocation
+            }
+          }
+        }
+      }
+    }
+    if (file.downloaded && !isExists) {
+      file.downloaded = false
+      options.changed = true
+    }
+  }
+  return isExists
+}

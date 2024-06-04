@@ -15,9 +15,14 @@ import {
   EventClient,
   NotFoundError,
   ResClientTools, ResServerTools,
-  wait
+  wait,
+  ServerTools,
+  ToolFunc,
+  Funcs,
+  ClientTools,
+  AlreadyExistsError
 } from "@isdk/ai-tool"
-import {DownloadFunc, DownloadName, DownloadProgressEventName, DownloadStatusEventName, download} from '@isdk/ai-tool-download'
+import {DownloadFunc, DownloadName, DownloadProgressEventName, DownloadStatusEventName, FileDownloadStatus, download} from '@isdk/ai-tool-download'
 
 
 import { findPort, rmFile } from '@isdk/ai-tool/test/util'
@@ -31,22 +36,34 @@ const FUNC_NAME = 'llm.models'
 const dbPath = ':memory:'
 const rootDir = path.resolve (__dirname, '..', 'models')
 
-const eventBus4Client = new EventToolFunc(EventBusName)
-// the event-bus for server
-ResServerTools.register(event)
-// the event-bus for client
-ResClientTools.register(eventBus4Client)
-backendEventable(ResClientTools)
-backendEventable(ResServerTools)
-ResServerTools.register(download)
-
 describe('LlmModelsFunc server api', () => {
   let apiRoot: string // = 'http://localhost:3000/api'
-  const server = fastify()
+  const server = fastify({
+    forceCloseConnections: true,
+  })
   // fs.rmSync(path.resolve(rootDir, MODELS_DB_NAME), {force: true})
   const res = new LlmModelsFunc(FUNC_NAME, {rootDir, dbPath, usingMirror: true})
 
   beforeAll(async () => {
+    const ServerToolItems: {[name:string]: ServerTools|ToolFunc} = {}
+    Object.setPrototypeOf(ServerToolItems, ToolFunc.items)
+    ServerTools.items = ServerToolItems
+
+    const ClientToolItems: Funcs = {}
+    Object.setPrototypeOf(ClientToolItems, ToolFunc.items)
+    ClientTools.items = ClientToolItems
+
+    const eventBus4Client = new EventToolFunc(EventBusName)
+    // the event-bus for server
+    ResServerTools.register(event)
+    // the event-bus for client
+    ResClientTools.register(eventBus4Client)
+    backendEventable(ResClientTools)
+    backendEventable(ResServerTools)
+    ResClientTools.register(eventOnClient)
+    ResServerTools.register(eventOnServer)
+    ResServerTools.register(download)
+
     server.get('/api', async function(request, reply){
       reply.send(ResServerTools)
     })
@@ -120,6 +137,8 @@ describe('LlmModelsFunc server api', () => {
 
   afterAll(async () => {
     await server.close()
+    delete (ClientTools as any).items
+    delete (ServerTools as any).items
   })
 
   beforeEach(() => {
@@ -203,13 +222,36 @@ describe('LlmModelsFunc server api', () => {
     const downloader = ResClientTools.get(DownloadName)
     // let result = await downloader.post({...url, start: true})
     result = await downloader.get({id})
+
+    // listen server downloader event directly
+    // const serverDownloader = ServerTools.get(DownloadName)
+    // serverDownloader.on(DownloadStatusEventName+':'+id, function(name: string, status: FileDownloadStatus) {
+    //   console.log('🚀 ~ it.only ~ name:', name, status)
+    // })
+
+    const event = ClientTools.get('event') as EventClient
+    // await event.subscribe([DownloadProgressEventName +':'+id, DownloadStatusEventName+':'+id])
+    await event.subscribe(DownloadStatusEventName+':'+id)
+    let curStatus
+    downloader.on(DownloadStatusEventName+':'+id, function(name: string, status: FileDownloadStatus) {
+      curStatus = status
+    })
+    await wait(880)
+
     while (result.status === 'downloading') {
       await wait(880)
       result = await downloader.get(result)
     }
     result = await downloader.get(result)
+    await event.unsubscribe(DownloadStatusEventName+':'+id)
+    event.active = false // disconnect event source
 
     expect(result).toHaveProperty('status', 'completed')
+    expect(curStatus).toBe('completed')
+    result = await modelsClient.getFileInfo({id: minFile._id, quant: minFile.quant})
+    expect(result.file).toHaveProperty('downloaded', true)
+    expect(result.file).toHaveProperty('location')
+    expect(modelsClient.download({id: minFile._id, quant: minFile.quant})).rejects.toThrow(AlreadyExistsError)
   })
 });
 
@@ -237,7 +279,7 @@ function getMinSizeFile(files: AIModelFileSettings[]) {
     if (minFile === undefined) {
       minFile = file
       minSize = file.file_size
-    } else if (file.file_size < minSize && file.file_size > 1024*1024*10) {
+    } else if (file.file_size < minSize) { // && file.file_size > 1024*1024*10
       minFile = file
       minSize = file.file_size
     }

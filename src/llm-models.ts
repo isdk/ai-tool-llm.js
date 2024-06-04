@@ -48,6 +48,9 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
     if (!rootDir) {throw new CommonError('rootDir is required', 'LlmModelsFunc', ErrorCode.InvalidArgument)}
     download.rootDir = rootDir
     if (!options.dbPath) {options.dbPath = path.join(rootDir, MODELS_DB_NAME)}
+    if (options.dbPath[0] !== ':' && !path.isAbsolute(options.dbPath)) {
+      options.dbPath = path.resolve(rootDir, options.dbPath)
+    }
     if (!options.initDir) {options.initDir = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', 'models')} //, 'gguf-models.json'
 
     super(name, options)
@@ -64,11 +67,19 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
 
   verifyFileExists(model: AIModelSettings) {
     let changed: boolean|undefined
+    let hasDownloaded: boolean|undefined
     const rootDir = this.rootDir!
     for (const file of model.files!) {
       const opts = {rootDir, changed: false}
-      verifyModelFileExists(file, opts)
+      const isExists = verifyModelFileExists(file, opts)
+      if (isExists) {hasDownloaded = true}
       if (opts.changed) {changed = true}
+    }
+    if (hasDownloaded) {
+      if (model.downloaded !== true) {
+        model.downloaded = true
+        changed = true
+      }
     }
     return changed
   }
@@ -191,6 +202,7 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
         if (status === 'completed') {
           file.downloaded = true
           file.location = path.resolve(download.rootDir!, idInfo.filepath)
+          model.downloaded = true
           that.put({val: model as any})
         }
       })

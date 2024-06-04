@@ -252,6 +252,11 @@ describe('LlmModelsFunc server api', () => {
     expect(result.file).toHaveProperty('downloaded', true)
     expect(result.file).toHaveProperty('location')
     expect(modelsClient.download({id: minFile._id, quant: minFile.quant})).rejects.toThrow(AlreadyExistsError)
+    result = await modelsClient.search({filter: {downloaded: true}})
+    // result = await modelsClient.searchEx({query: `val->>'$.downloaded'= true`})
+    expect(result.length).toBeGreaterThanOrEqual(1)
+    result = await modelsClient.search({filter: {$or:[{downloaded: {'!=': true}}, {downloaded: null }], featured: true}})
+    expect(result.length).toBeGreaterThanOrEqual(1)
   })
 });
 

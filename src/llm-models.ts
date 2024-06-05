@@ -57,7 +57,7 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
   }
 
   getDocsFromDir(dir: string) {
-    const docs = super.getDocsFromDir(dir).flat()
+    const docs = super.getDocsFromDir(dir)
     for (const doc of docs) {
       const model = doc as AIModelSettings
       this.verifyFileExists(model)
@@ -89,7 +89,7 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
   }
 
   getFileInfo(id: string, quant: AIModelQuantType, model?: AIModelSettings) {
-    if (!model) {model = this.db.get(id)}
+    if (!model) {model = this.db.get(id) as AIModelSettings}
     if (!model) {
       throw new NotFoundError(id, this.name + '.getFileInfo')
     }
@@ -163,7 +163,7 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
       throw new NotFoundError(id, this.name + '._getUrlByParams')
     }
 
-    const file = this.getFileInfo(id, quant, model)
+    const file = this.getFileInfo(id as any, quant, model)
 
     const url = this.getUrl(file, quant)
     const filepath = this.getPath(file, quant)

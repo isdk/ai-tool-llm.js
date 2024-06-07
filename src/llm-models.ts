@@ -17,7 +17,7 @@ import {
 } from "@isdk/ai-tool"
 
 import { KVSqliteResFunc, KVSqliteResFuncParams,  } from "@isdk/ai-tool-sqlite"
-import { DownloadName, DownloadStatusEventName, FileDownloadStatus, download } from '@isdk/ai-tool-download'
+import { DownloadName, DownloadStatusEventName, FileDownloadStatus, download } from '@isdk/ai-tool-downloader'
 
 import { AIModelFileSettings, AIModelQuantType, AIModelSettings } from './llm-settings'
 import { getHFUrl } from './utils'

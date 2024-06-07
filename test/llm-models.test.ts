@@ -22,7 +22,7 @@ import {
   ClientTools,
   AlreadyExistsError
 } from "@isdk/ai-tool"
-import {DownloadFunc, DownloadName, DownloadProgressEventName, DownloadStatusEventName, FileDownloadStatus, download} from '@isdk/ai-tool-download'
+import {DownloadFunc, DownloadName, DownloadProgressEventName, DownloadStatusEventName, FileDownloadStatus, download} from '@isdk/ai-tool-downloader'
 
 
 import { findPort, rmFile } from '@isdk/ai-tool/test/util'

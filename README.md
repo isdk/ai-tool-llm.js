@@ -2,45 +2,46 @@
 
 ## LLMProvider
 
-LLM(Large Language Model) 获得任意类型的大模型输出。
-所有LLM Provider的基类,从这里派生.一个后端允许支持多种类型的model.
+LLMProvider serves as the base class for all Large Language Model (LLM) backends, enabling support for various model types from a single backend. This class is pivotal in obtaining outputs from any LLM.
 
-LLM提供者至少需要定义:
+Every LLM provider must define:
 
-* `rule`: `RegExp|string|function` 只对匹配的model名进行服务
-  * eg, llama.cpp 为 `/[.]gguf$/`
-* `async func(input: LLMArguments)`: 接收输入,返回大模型输出
-  * LLMProvider 的函数目的是根据输入产生输出,一种流式JSON Object输出,一种非流式输出。
+* `rule`: `RegExp | string | function`: Determines which model names this provider will service. For instance, lama.cpp might use the pattern `/[.]gguf$/`.
+* `async function(input: LLMArguments)`: Accepts input and returns the LLM's output. The function's objective is to generate output based on the input, which can be either a streamed JSON object or a non-streamed response.
 
-大模型返回的是`JSON Object`:
+The LLM's output is structured as a JSON Object adhering to the following schema:
 
 ```js
 export type AITextGenerationFinishReason =
-  | 'stop' // model generated stop sequence
-  | 'length' // model generated maximum number of tokens
-  | 'content-filter' // content filter violation stopped the model
-  | 'tool-calls' // model triggered tool calls
-  | 'error' // model stopped because of an error
-  | 'other' | null; // model stopped for other reasons
+  | 'stop'       // Model generated a stop sequence
+  | 'length'     // Maximum token limit reached
+  | 'content-filter' // Content violated filters
+  | 'tool-calls'  // Model invoked tool calls
+  | 'abort',      // aborted by user or timeout for stream
+  | 'error'      // Model halted due to an error
+  | 'other'      // Other termination reasons
+  | null;        // No specified reason
 
 export interface AIResult<TValue = any, TOptions = any> {
   /**
-   * The generated value.
+   * Generated content.
    */
   content?: TValue;
 
   /**
-   * The reason why the generation stopped.
+   * Reason for generation termination.
    */
   finishReason?: AITextGenerationFinishReason;
-  options?: TOptions
+
+  /**
+   * Optional parameters associated with the result.
+   */
+  options?: TOptions;
 }
 ```
 
-如果是流式输出，则返回的JSON 对象中没有`finishReason`, 只有`content`,options是可选的.
+In the case of streaming output, the returned JSON objects exclude `finishReason` and only include `content`. `options` are optional.
 
-注册各种LLM后端,调用LLM返回结果.
-当没有指定LLM后端,使用`current`指定的LLM后端默认大模型,进行处理.
-能够获得当前LLM的大模型的参数大小.
+To register diverse LLM backends and retrieve results, invoke the LLM method. If no specific LLM backend is designated, the default one set via current will process requests. It also facilitates querying the parameter size of the `current` LLM model.
 
-通过静态方法`getByModel(modelName: string)` 决定使用的Provider.
+Static method `getByModel(modelName: string)` is employed to determine the appropriate Provider based on the model name provided.

@@ -41,6 +41,11 @@ describe('LLMProvider', ()=>{
     expect(result).toStrictEqual(testLLMProvider)
   })
 
+  it('getByModel with protocol', ()=>{
+    const result = LLMProvider.getByModel('LLMTest://hi/world/no')
+    expect(result).toStrictEqual(testLLMProvider)
+  })
+
   it('getChatTemplate', async ()=>{
     const result = await testLLMProvider.getChatTemplate('phi-3.test')
     expect(result).toHaveProperty('prompt')

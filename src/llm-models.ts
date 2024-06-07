@@ -1,19 +1,11 @@
 import path from 'path'
 import fs from 'fs'
 import {
-  // AlreadyExistsError,
-  // EventName,
-  // event,
-  // eventServer,
-  // isValidFilepath,
-  // throwError,
-  // xxhashAsStr,
   ErrorCode,
   FuncItem,
   CommonError,
   ServerFuncParams,
   NotFoundError,
-  // EventBusName,
 } from "@isdk/ai-tool"
 
 import { KVSqliteResFunc, KVSqliteResFuncParams,  } from "@isdk/ai-tool-sqlite"
@@ -25,7 +17,6 @@ import { LLMProviderName, llm } from './llm-provider'
 import { LLMArguments } from './llm-options'
 
 export const MODELS_DB_NAME = '.modelsdb'
-// const eventBus = event.runSync()
 
 interface LlmModelsFuncParams extends AIModelSettings, KVSqliteResFuncParams {
   dryRun?: boolean

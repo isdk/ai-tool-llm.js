@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import {
-  AlreadyExistsError,
+  // AlreadyExistsError,
   // EventName,
   // event,
   // eventServer,
@@ -28,10 +28,11 @@ export const MODELS_DB_NAME = '.modelsdb'
 // const eventBus = event.runSync()
 
 interface LlmModelsFuncParams extends AIModelSettings, KVSqliteResFuncParams {
+  dryRun?: boolean
 }
 
 function findModelFileByQuant(files: AIModelFileSettings[], quant: AIModelQuantType) {
-  return files.find(file => file.quant === quant)
+  return files.find(file => Array.isArray(file) ? file[0]?.quant === quant : file.quant === quant)
 }
 
 export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
@@ -93,17 +94,24 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
     if (!model) {
       throw new NotFoundError(id, this.name + '.getFileInfo')
     }
-    const fileInfo = findModelFileByQuant(model.files!, quant) as AIModelFileSettings
+    const fileInfo = findModelFileByQuant(model.files!, quant) as AIModelFileSettings|AIModelFileSettings[]
     if (!fileInfo) {
       throw new NotFoundError(`${id}.${quant}`, this.name + '.getFileInfo')
     }
-    fileInfo.hf_repo = model.hf_repo
+    if (Array.isArray(fileInfo)) {
+      fileInfo[0].hf_repo = model.hf_repo
+    } else {
+      fileInfo.hf_repo = model.hf_repo
+    }
     return fileInfo
   }
 
   getPath(fileInfo: string|AIModelSettings, quant: AIModelQuantType) {
     if (typeof fileInfo === 'string') {
       fileInfo = this.getFileInfo(fileInfo, quant)
+    }
+    if (Array.isArray(fileInfo)) {
+      fileInfo = fileInfo[0] as AIModelFileSettings
     }
     const result = fileInfo.location ?? fileInfo.file_name
     return result
@@ -113,10 +121,14 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
     if (typeof fileInfo === 'string') {
       fileInfo = this.getFileInfo(fileInfo, quant)
     }
+    if (Array.isArray(fileInfo)) {
+      fileInfo = fileInfo[0] as AIModelFileSettings
+    }
     const result = fileInfo.url ?? this.getUrlFromHf(fileInfo)
     return result
   }
 
+  // internal method, must call getFileInfo first to get hf_repo
   getUrlFromHf(fileInfo: AIModelFileSettings, hubUrl?: string) {
     if (fileInfo.hf_repo && fileInfo.hf_path) {
       if (this.usingMirror && !hubUrl) {
@@ -180,34 +192,65 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
   }
 
   async $download(params: LlmModelsFuncParams) {
-    let {overwrite} = params
-
-    const {url, filepath, file, model} = await this._getUrlByParams(params)
-
-    if (file.downloaded) {
-      throw new AlreadyExistsError(`file "${filepath}"`, this.name + '.download')
-    }
-
+    let {overwrite} = params || {}
     overwrite = overwrite ?? false
-    const result = await download.post({
-      url,
-      filepath,
-      overwrite,
-      start: true,
-    })
+    const hubUrl = params.url
+    const dryRun = params.dryRun
 
-    if (result?.id) {
-      const that = this
-      download.on(DownloadStatusEventName+':'+result.id, function(_name: string, status: FileDownloadStatus, idInfo: {url: string, id: string, filepath: string}) {
-        if (status === 'completed') {
-          file.downloaded = true
-          file.location = path.resolve(download.rootDir!, idInfo.filepath)
-          model.downloaded = true
-          that.put({val: model as any})
+    const {file, model} = await this._getUrlByParams(params)
+
+    const files = Array.isArray(file) ? file : [file]
+    // TODO: refactor this for other sources
+    // the getUrlFromHf need hf_repo
+    files.forEach(file => file.hf_repo = model.hf_repo)
+    if (dryRun) {
+      return files.filter(file => !file.downloaded).map((file) => {
+        const url = this.getUrlFromHf(file, hubUrl) as string
+        return {
+          id: download.getId({url})!,
+          url,
+          filepath: file.location ?? file.file_name,
+          size: file.size,
+          downloaded: file.downloaded,
+          model: model._id,
+          quant: file.quant,
         }
       })
     }
-    return result;
+
+    let taskIds: ({id: string, [name: string]: any}|undefined)[] = []
+    const that = this
+    for (const file of files) {
+      if (file.downloaded) {
+        continue
+      }
+
+      const url = this.getUrlFromHf(file, hubUrl)
+      if (!url) {throw new CommonError('Can not get url for ' + file.file_name, this.name + '.$download', ErrorCode.InvalidArgument)}
+      const filepath = file.location ?? file.file_name
+      const result = await download.post({
+        url,
+        filepath,
+        overwrite,
+        start: true,
+      }) as {id: string, [name: string]: any}
+
+      if (result?.id) {
+        result.url = url
+        result.filepath = filepath
+        download.on(DownloadStatusEventName+':'+result.id, function(_name: string, status: FileDownloadStatus, idInfo: {url: string, id: string, filepath: string}) {
+          if (status === 'completed') {
+            file.downloaded = true
+            file.location = path.resolve(download.rootDir!, idInfo.filepath)
+            model.downloaded = true
+            that.put({val: model as any})
+          }
+        })
+      }
+      taskIds.push(result)
+    }
+
+    return taskIds.length === 1 ? taskIds[0] : taskIds.length > 0 ? taskIds: undefined;
   }
 
   async $run(input: LLMArguments) {

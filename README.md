@@ -1,20 +1,16 @@
 # ai-tool-llm
 
+## LLMProvider
+
 LLM(Large Language Model) 获得任意类型的大模型输出。
+所有LLM Provider的基类,从这里派生.一个后端允许支持多种类型的model.
 
-我需要一个配置表，用来通过model名称查找： task类型，以及可以使用的后端。
-另外对于stream模式如何传递abort?可能在函数中增加额外的标识，流的实质是`EventSource`
-这里绝大多数后端都能够在浏览器端直接运行。不过这里不关心到底是在那里注册。
+LLM提供者至少需要定义:
 
-model名配置规则，允许RegExp：
-`/*.gguf$/`
-
-我得让`providers`自己提供它的配置规则。
-
-一个后端可以支持多种类型的model.
-
-LLMProvider 的函数目的是根据输入产生输出,一种流式JSON Object输出,一种非流式输出。
-通过静态方法`getByModel(modelName: string)` 决定使用的Provider.
+* `rule`: `RegExp|string|function` 只对匹配的model名进行服务
+  * eg, llama.cpp 为 `/[.]gguf$/`
+* `async func(input: LLMArguments)`: 接收输入,返回大模型输出
+  * LLMProvider 的函数目的是根据输入产生输出,一种流式JSON Object输出,一种非流式输出。
 
 大模型返回的是`JSON Object`:
 
@@ -47,3 +43,4 @@ export interface AIResult<TValue = any, TOptions = any> {
 当没有指定LLM后端,使用`current`指定的LLM后端默认大模型,进行处理.
 能够获得当前LLM的大模型的参数大小.
 
+通过静态方法`getByModel(modelName: string)` 决定使用的Provider.

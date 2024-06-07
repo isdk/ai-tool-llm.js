@@ -131,9 +131,6 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
   // internal method, must call getFileInfo first to get hf_repo
   getUrlFromHf(fileInfo: AIModelFileSettings, hubUrl?: string) {
     if (fileInfo.hf_repo && fileInfo.hf_path) {
-      if (this.usingMirror && !hubUrl) {
-        hubUrl = 'https://hf-mirror.com'
-      }
 
       return getHFUrl({
         repo: fileInfo.hf_repo,

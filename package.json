@@ -61,7 +61,8 @@
   },
   "files": [
     "docs",
-    "dist"
+    "dist",
+    "models/gguf-models.json"
   ],
   "keywords": [
     "ai",

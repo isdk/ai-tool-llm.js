@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.3](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.2...v0.0.3) (2024-06-07)
+
+
+### Features
+
+* modelname add url protocol supports to select provider ([d2016c5](https://github.com/isdk/ai-tool-llm.js/commit/d2016c5d87894c79cbac26fab94e7e0d56c8f586))
+
 ## 0.0.2 (2024-06-07)
 
 

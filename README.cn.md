@@ -7,10 +7,12 @@ LLM(Large Language Model) 获得任意类型的大模型输出。
 
 LLM提供者至少需要定义:
 
-* `rule`: `RegExp|string|function` 只对匹配的model名进行服务
+* `rule`: optional, `RegExp|string|function` 只对匹配的model名进行服务
   * eg, llama.cpp 为 `/[.]gguf$/`
 * `async func(input: LLMArguments)`: 接收输入,返回大模型输出
   * LLMProvider 的函数目的是根据输入产生输出,一种流式JSON Object输出,一种非流式输出。
+
+注意: 注册的provider名称会被作为url协议名部分.
 
 大模型返回的是`JSON Object`:
 

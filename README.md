@@ -6,8 +6,10 @@ LLMProvider serves as the base class for all Large Language Model (LLM) backends
 
 Every LLM provider must define:
 
-* `rule`: `RegExp | string | function`: Determines which model names this provider will service. For instance, lama.cpp might use the pattern `/[.]gguf$/`.
+* `rule`: `RegExp | string | function`: optional, Determines which model names this provider will service. For instance, lama.cpp might use the pattern `/[.]gguf$/`.
 * `async function(input: LLMArguments)`: Accepts input and returns the LLM's output. The function's objective is to generate output based on the input, which can be either a streamed JSON object or a non-streamed response.
+
+Note: the registered provider name will be treat as model url protocol name part.
 
 The LLM's output is structured as a JSON Object adhering to the following schema:
 

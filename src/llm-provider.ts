@@ -9,6 +9,7 @@ import {
   type AIChatMessageParam,
   type ServerFuncParams,
   type AIModelNameRules,
+  matchUrlProtocol,
 
 } from '@isdk/ai-tool'
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
@@ -42,6 +43,12 @@ export class LLMProvider extends ToolFunc {
 
   static getByModel(modelName?: string) {
     if (modelName) {
+      const protocol = matchUrlProtocol(modelName)
+      if (protocol) {
+        const provider = LLMProvider.get(protocol) as LLMProvider
+        if (provider) {return provider}
+        throw new NotFoundError(`provider:${protocol}`, modelName)
+      }
       const items = this.items
       for (const name of Object.keys(items)) {
         const item = items[name]
@@ -68,8 +75,15 @@ export class LLMProvider extends ToolFunc {
   }
 
   async func(input: LLMArguments): Promise<AIResult> {
-    const provider = input.provider ? LLMProvider.get(input.provider) as LLMProvider : LLMProvider.getByModel(input.model)
+    const model = input.model
+    const provider = input.provider ? LLMProvider.get(input.provider) as LLMProvider ?? LLMProvider.getByModel(model) : LLMProvider.getByModel(model)
     if (provider) {
+      if (model) {
+        const protocol = matchUrlProtocol(model)
+        if (protocol) {
+          input.model = model.replace(protocol+'://', '')
+        }
+      }
       return provider.func(input)
     } else {
       throw new NotImplementationError('no current provider')

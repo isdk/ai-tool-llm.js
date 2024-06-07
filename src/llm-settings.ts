@@ -1,4 +1,4 @@
-import { FileDownloadStatus } from "@isdk/ai-tool-download"
+import { FileDownloadStatus } from "@isdk/ai-tool-downloader"
 import { AIOptions } from "./llm-options"
 import { AIModelSkillName } from "./llm-skills"
 import { AIModelNameRule, AIModelNameRules } from "@isdk/ai-tool"

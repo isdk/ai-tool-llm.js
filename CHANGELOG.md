@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.4](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.3...v0.0.4) (2024-06-09)
+
+
+### Bug Fixes
+
+* should use first matched prompt version ([335897f](https://github.com/isdk/ai-tool-llm.js/commit/335897f1d8898e0c53c1c3befe0d938285504613))
+
 ## [0.0.3](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.2...v0.0.3) (2024-06-07)
 
 

@@ -166,7 +166,7 @@ KVSqliteResFunc\&lt;LlmModelsFuncParams\&gt;.constructor
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L38)
+[packages/ai-tool-llm/src/llm-models.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L38)
 
 ## Properties
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L33)
+[packages/ai-tool-llm/src/llm-models.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L33)
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L30)
+[packages/ai-tool-llm/src/llm-models.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L30)
 
 ___
 
@@ -497,7 +497,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L31)
+[packages/ai-tool-llm/src/llm-models.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L31)
 
 ___
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:182](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L182)
+[packages/ai-tool-llm/src/llm-models.ts:182](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L182)
 
 ___
 
@@ -607,7 +607,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:177](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L177)
+[packages/ai-tool-llm/src/llm-models.ts:177](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L177)
 
 ___
 
@@ -627,7 +627,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:244](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L244)
+[packages/ai-tool-llm/src/llm-models.ts:244](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L244)
 
 ___
 
@@ -695,7 +695,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:144](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L144)
+[packages/ai-tool-llm/src/llm-models.ts:144](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L144)
 
 ___
 
@@ -1075,7 +1075,7 @@ KVSqliteResFunc.getDocsFromDir
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:51](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L51)
+[packages/ai-tool-llm/src/llm-models.ts:51](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L51)
 
 ___
 
@@ -1097,7 +1097,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L83)
+[packages/ai-tool-llm/src/llm-models.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L83)
 
 ___
 
@@ -1190,7 +1190,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:100](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L100)
+[packages/ai-tool-llm/src/llm-models.ts:100](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L100)
 
 ___
 
@@ -1235,7 +1235,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:111](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L111)
+[packages/ai-tool-llm/src/llm-models.ts:111](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L111)
 
 ___
 
@@ -1256,7 +1256,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:123](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L123)
+[packages/ai-tool-llm/src/llm-models.ts:123](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L123)
 
 ___
 
@@ -1435,7 +1435,7 @@ KVSqliteResFunc.isStream
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:79](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L79)
+[packages/ai-tool-llm/src/llm-models.ts:79](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L79)
 
 ___
 
@@ -1586,7 +1586,7 @@ KVSqliteResFunc.put
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:134](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L134)
+[packages/ai-tool-llm/src/llm-models.ts:134](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L134)
 
 ___
 
@@ -1968,7 +1968,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-models.ts:60](https://github.com/isdk/ai-tool-llm.js/blob/30c126ae45253f0aecb04dfe6019bcfa33db7bab/src/llm-models.ts#L60)
+[packages/ai-tool-llm/src/llm-models.ts:60](https://github.com/isdk/ai-tool-llm.js/blob/335897f1d8898e0c53c1c3befe0d938285504613/src/llm-models.ts#L60)
 
 ___
 

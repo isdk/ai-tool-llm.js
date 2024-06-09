@@ -174,6 +174,7 @@ export class LLMProvider extends ToolFunc {
       add_generation_prompt?: boolean,
       chatTemplate?: AIPromptResult,
       type?: AIPromptType,
+      prompt?: any,
     } = {}
   ) {
     let chatTemplate: string|AIPromptResult|undefined = options.chatTemplate
@@ -181,7 +182,7 @@ export class LLMProvider extends ToolFunc {
       modelInfo = await this.getModelInfo(modelInfo)
     }
     const add_generation_prompt = options.add_generation_prompt ?? true
-    const data: PromptTemplateData = {messages, add_generation_prompt, bos_token: ''}
+    const data: PromptTemplateData = {bos_token: '', ...options, messages, add_generation_prompt}
     if (modelInfo) {
       if (modelInfo.bos_token) {data.bos_token = modelInfo.bos_token}
       if (modelInfo.eos_token) {data.eos_token = modelInfo.eos_token}
@@ -192,8 +193,9 @@ export class LLMProvider extends ToolFunc {
       if (chatTemplate?.version) {
         let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
         if (Array.isArray(version)) {
-          const isDefault = version.indexOf('@')
-          version = isDefault ? '@' : version[0]
+          // const isDefault = version.indexOf('@')
+          // version = isDefault ? '@' : version[0]
+          version = version[0]
         }
         if (version) {
           data.version = version

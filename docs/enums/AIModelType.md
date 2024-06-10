@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:10](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L10)
+[packages/ai-tool-llm/src/llm-settings.ts:10](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L10)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L13)
+[packages/ai-tool-llm/src/llm-settings.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L13)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:15](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L15)
+[packages/ai-tool-llm/src/llm-settings.ts:15](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L15)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:12](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L12)
+[packages/ai-tool-llm/src/llm-settings.ts:12](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L12)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L14)
+[packages/ai-tool-llm/src/llm-settings.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L14)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:11](https://github.com/isdk/ai-tool-llm.js/blob/323bb4f20017330924e68fa90789c4fbed81c277/src/llm-settings.ts#L11)
+[packages/ai-tool-llm/src/llm-settings.ts:11](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-settings.ts#L11)

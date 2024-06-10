@@ -21,7 +21,7 @@ A numeric value representing the quality of the skill, as determined by its rati
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-skills.ts#L20)
+[packages/ai-tool-llm/src/llm-skills.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/eeac1082a905a0d51115018893c85de13ea210ee/src/llm-skills.ts#L20)
 
 ___
 
@@ -33,4 +33,4 @@ The source or authority that rated this skill (e.g., an open_llm benchmark or us
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:18](https://github.com/isdk/ai-tool-llm.js/blob/adf4281f624679e744ead8368261a1e5d0c4f7cd/src/llm-skills.ts#L18)
+[packages/ai-tool-llm/src/llm-skills.ts:18](https://github.com/isdk/ai-tool-llm.js/blob/eeac1082a905a0d51115018893c85de13ea210ee/src/llm-skills.ts#L18)

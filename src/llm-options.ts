@@ -47,7 +47,11 @@ export interface AITextGenerationOptions extends AIOptions {
    *
    * Example: `stop_words: ['\n', 'END']`
    */
-  stop_words?: string[] | undefined;
+  stop_words?: string|string[] | undefined;
+  /**
+   * the alias of stop_words
+   */
+  stop?: string|string[] | undefined;
 
   /**
    * Number of texts to generate.
@@ -74,6 +78,11 @@ export interface AITextGenerationOptions extends AIOptions {
   stream?: boolean
 
   response_format?: AIResponseFormat
+  frequency_penalty?: number
+  presence_penalty?: number
+  seed?: number
+  top_p?: number
+  top_k?: number
 }
 
 export interface LLMArguments {

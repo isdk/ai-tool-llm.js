@@ -13,12 +13,18 @@
 ### Properties
 
 - [content\_size](AITextGenerationOptions.md#content_size)
+- [frequency\_penalty](AITextGenerationOptions.md#frequency_penalty)
 - [gen\_count](AITextGenerationOptions.md#gen_count)
 - [max\_tokens](AITextGenerationOptions.md#max_tokens)
+- [presence\_penalty](AITextGenerationOptions.md#presence_penalty)
 - [response\_format](AITextGenerationOptions.md#response_format)
+- [seed](AITextGenerationOptions.md#seed)
+- [stop](AITextGenerationOptions.md#stop)
 - [stop\_words](AITextGenerationOptions.md#stop_words)
 - [stream](AITextGenerationOptions.md#stream)
 - [temperature](AITextGenerationOptions.md#temperature)
+- [top\_k](AITextGenerationOptions.md#top_k)
+- [top\_p](AITextGenerationOptions.md#top_p)
 - [trim](AITextGenerationOptions.md#trim)
 
 ## Properties
@@ -31,7 +37,17 @@ Specify the context window size of the model that you have loaded.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:37](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L37)
+[packages/ai-tool-llm/src/llm-options.ts:37](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L37)
+
+___
+
+### frequency\_penalty
+
+• `Optional` **frequency\_penalty**: `number`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L81)
 
 ___
 
@@ -52,7 +68,7 @@ Example: `gen_count: 3` // The model will produce 3 different responses.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:64](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L64)
+[packages/ai-tool-llm/src/llm-options.ts:68](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L68)
 
 ___
 
@@ -69,7 +85,17 @@ Example: `max_tokens: 1000`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L31)
+[packages/ai-tool-llm/src/llm-options.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L31)
+
+___
+
+### presence\_penalty
+
+• `Optional` **presence\_penalty**: `number`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L82)
 
 ___
 
@@ -79,13 +105,35 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L76)
+[packages/ai-tool-llm/src/llm-options.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L80)
+
+___
+
+### seed
+
+• `Optional` **seed**: `number`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L83)
+
+___
+
+### stop
+
+• `Optional` **stop**: `string` \| `string`[]
+
+the alias of stop_words
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L54)
 
 ___
 
 ### stop\_words
 
-• `Optional` **stop\_words**: `string`[]
+• `Optional` **stop\_words**: `string` \| `string`[]
 
 Stop sequences to use.
 Stop sequences are an array of strings or a single string that the model will recognize as end-of-text indicators.
@@ -99,7 +147,7 @@ Example: `stop_words: ['\n', 'END']`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:50](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L50)
+[packages/ai-tool-llm/src/llm-options.ts:50](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L50)
 
 ___
 
@@ -109,7 +157,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:74](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L74)
+[packages/ai-tool-llm/src/llm-options.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L78)
 
 ___
 
@@ -121,7 +169,27 @@ Adjust the randomness of the generated text.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L21)
+[packages/ai-tool-llm/src/llm-options.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L21)
+
+___
+
+### top\_k
+
+• `Optional` **top\_k**: `number`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L85)
+
+___
+
+### top\_p
+
+• `Optional` **top\_p**: `number`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L84)
 
 ___
 
@@ -136,4 +204,4 @@ Default: true.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:72](https://github.com/isdk/ai-tool-llm.js/blob/17f2252931c76fdf98365ff0308d975b6c3d839b/src/llm-options.ts#L72)
+[packages/ai-tool-llm/src/llm-options.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/40262309ef9265215df2dd0d31853b28da52b5cc/src/llm-options.ts#L76)

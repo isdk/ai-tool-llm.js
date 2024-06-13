@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.9](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.8...v0.0.9) (2024-06-13)
+
+
+### Features
+
+* add stop as stop_words alias and allow string ([4026230](https://github.com/isdk/ai-tool-llm.js/commit/40262309ef9265215df2dd0d31853b28da52b5cc))
+* upgrade models info ([8294954](https://github.com/isdk/ai-tool-llm.js/commit/82949544d324d574ef766c6c982cd176df9355d5))
+
 ## [0.0.8](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.7...v0.0.8) (2024-06-11)
 
 ## [0.0.7](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.6...v0.0.7) (2024-06-10)

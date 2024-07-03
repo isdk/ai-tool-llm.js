@@ -72,6 +72,11 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
         model.downloaded = true
         changed = true
       }
+    } else {
+      if (model.downloaded === true) {
+        delete model.downloaded
+        changed = true
+      }
     }
     return changed
   }
@@ -188,6 +193,7 @@ export class LlmModelsFunc extends KVSqliteResFunc<LlmModelsFuncParams> {
     const {file, model} = await this._getUrlByParams(params)
 
     const files = Array.isArray(file) ? file : [file]
+
     // TODO: refactor this for other sources
     // the getUrlFromHf need hf_repo
     files.forEach(file => file.hf_repo = model.hf_repo)
@@ -266,8 +272,10 @@ function verifyModelFileExists(file: AIModelFileSettings|AIModelFileSettings[], 
   let isExists: boolean|undefined
   if (Array.isArray(file)) {
     for (const f of file) {
-      isExists = verifyModelFileExists(f, options)
-      if (!isExists) {break}
+      const _isExists = verifyModelFileExists(f, options)
+      if (!_isExists) {
+        isExists = false
+      }
     }
   } else {
     const defaultLocation = path.resolve(rootDir, file.file_name!)
@@ -300,10 +308,10 @@ function verifyModelFileExists(file: AIModelFileSettings|AIModelFileSettings[], 
         }
       }
     }
-    if (file.downloaded && !isExists) {
-      file.downloaded = false
+    if (file.downloaded != isExists) {
       options.changed = true
     }
+    if (isExists) {file.downloaded = isExists} else {delete file.downloaded}
   }
   return isExists
 }

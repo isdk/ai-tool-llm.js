@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.11](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.10...v0.0.11) (2024-07-08)
+
+
+### Bug Fixes
+
+* the cached downloaded flag is not correctly ([900ddb8](https://github.com/isdk/ai-tool-llm.js/commit/900ddb82241042a1fca01f33b0f3c8a2417476a8))
+
 ## [0.0.10](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.9...v0.0.10) (2024-06-21)
 
 ## [0.0.9](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.8...v0.0.9) (2024-06-13)

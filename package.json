@@ -49,6 +49,7 @@
     "eventsource": "^2.0.2",
     "fastify": "^4.26.2",
     "prettier": "^3.2.5",
+    "terser": "^5.31.1",
     "tsup": "^8.0.2",
     "tsx": "^4.7.3",
     "typedoc": "^0.25.13",

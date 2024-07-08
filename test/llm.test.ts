@@ -65,16 +65,13 @@ describe('LLMProvider', ()=>{
     expect(options.chatTemplate).toHaveProperty('prompt')
     expect(options.chatTemplate.prompt).toHaveProperty('_id', 'Phi-3')
     expect(result).toMatchInlineSnapshot(`
-      "<|system|>
-      You are a helpful AI assistant.<|end|>
-      <|user|>
+      "<|user|>
       1+2=<|end|>
       <|assistant|>
       3<|end|>
       <|user|>
       2+3=<|end|>
-      <|assistant|>
-      "
+      <|assistant|>"
     `)
 
   })

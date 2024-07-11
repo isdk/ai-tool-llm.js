@@ -10,12 +10,11 @@ import {
   type ServerFuncParams,
   type AIModelNameRules,
   matchUrlProtocol,
-
+  paramsSizeToScaleStr,
 } from '@isdk/ai-tool'
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
 import { LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
-import { paramsSizeToScaleStr } from './utils'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>

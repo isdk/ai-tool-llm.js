@@ -13,7 +13,7 @@ export enum AIModelType {
   drawing,  // text to image
   tts,  // text to audio
   embedding,
-  fill, // fill text
+  infill, // fill in middle text
 }
 
 export interface AIProviderSettings {

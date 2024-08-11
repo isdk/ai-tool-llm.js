@@ -12,7 +12,6 @@
 ### Classes
 
 - [LLMProvider](classes/LLMProvider.md)
-- [LlmModelsFunc](classes/LlmModelsFunc.md)
 
 ### Interfaces
 
@@ -49,17 +48,13 @@
 - [AIModelSources](modules.md#aimodelsources)
 - [LLMProviderName](modules.md#llmprovidername)
 - [LLMProviderSchema](modules.md#llmproviderschema)
-- [MODELS\_DB\_NAME](modules.md#models_db_name)
 - [llm](modules.md#llm)
 
 ### Functions
 
 - [flip](modules.md#flip)
-- [getHFUrl](modules.md#gethfurl)
 - [joinUrl](modules.md#joinurl)
 - [mapApiOptions](modules.md#mapapioptions)
-- [paramsSizeToScaleStr](modules.md#paramssizetoscalestr)
-- [scaleStrToParamsSize](modules.md#scalestrtoparamssize)
 
 ## Type Aliases
 
@@ -69,7 +64,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:44](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L44)
+[packages/ai-tool-llm/src/llm-skills.ts:44](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L44)
 
 ___
 
@@ -79,7 +74,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:135](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-settings.ts#L135)
+[packages/ai-tool-llm/src/llm-settings.ts:138](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-settings.ts#L138)
 
 ___
 
@@ -89,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:35](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L35)
+[packages/ai-tool-llm/src/llm-skills.ts:35](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L35)
 
 ___
 
@@ -101,7 +96,7 @@ Combines both public and internal skills into a single namespace for convenience
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L47)
+[packages/ai-tool-llm/src/llm-skills.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L47)
 
 ___
 
@@ -111,7 +106,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L13)
+[packages/ai-tool-llm/src/llm-skills.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L13)
 
 ___
 
@@ -121,7 +116,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:4](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L4)
+[packages/ai-tool-llm/src/llm-skills.ts:4](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L4)
 
 ___
 
@@ -131,7 +126,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-settings.ts#L7)
+[packages/ai-tool-llm/src/llm-settings.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-settings.ts#L7)
 
 ___
 
@@ -141,7 +136,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:10](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-options.ts#L10)
+[packages/ai-tool-llm/src/llm-options.ts:10](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-options.ts#L10)
 
 ___
 
@@ -151,7 +146,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:95](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-options.ts#L95)
+[packages/ai-tool-llm/src/llm-options.ts:95](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-options.ts#L95)
 
 ## Variables
 
@@ -163,7 +158,7 @@ Lists the names of skills that are internal to the system and not directly obser
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L38)
+[packages/ai-tool-llm/src/llm-skills.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L38)
 
 ___
 
@@ -175,7 +170,7 @@ Lists the names of publicly recognized skills known to users.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L24)
+[packages/ai-tool-llm/src/llm-skills.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L24)
 
 ___
 
@@ -187,7 +182,7 @@ Defines types of skill scores, indicating whether they are rated by an external 
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L7)
+[packages/ai-tool-llm/src/llm-skills.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L7)
 
 ___
 
@@ -199,7 +194,7 @@ Types and definitions for skills within the Language Model (LLM) system.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:3](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-skills.ts#L3)
+[packages/ai-tool-llm/src/llm-skills.ts:3](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-skills.ts#L3)
 
 ___
 
@@ -209,7 +204,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:6](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-settings.ts#L6)
+[packages/ai-tool-llm/src/llm-settings.ts:6](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-settings.ts#L6)
 
 ___
 
@@ -219,7 +214,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-provider.ts#L28)
+[packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-provider.ts#L27)
 
 ___
 
@@ -248,17 +243,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:147](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-settings.ts#L147)
-
-___
-
-### MODELS\_DB\_NAME
-
-• `Const` **MODELS\_DB\_NAME**: ``".modelsdb"``
-
-#### Defined in
-
-[packages/ai-tool-llm/src/llm-models.ts:19](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-models.ts#L19)
+[packages/ai-tool-llm/src/llm-settings.ts:150](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-settings.ts#L150)
 
 ___
 
@@ -268,7 +253,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:232](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-provider.ts#L232)
+[packages/ai-tool-llm/src/llm-provider.ts:231](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-provider.ts#L231)
 
 ## Functions
 
@@ -288,32 +273,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:129](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-options.ts#L129)
-
-___
-
-### getHFUrl
-
-▸ **getHFUrl**(`params`): `string`
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `params` | `Object` | - |
-| `params.hubUrl?` | `string` | - |
-| `params.path` | `string` | - |
-| `params.raw?` | `boolean` | If true, will download the raw git file. For example, when calling on a file stored with Git LFS, the pointer file will be downloaded instead. |
-| `params.repo` | `RepoDesignation` | - |
-| `params.revision?` | `string` | - |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[packages/ai-tool-llm/src/utils/huggingface.ts:18](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/utils/huggingface.ts#L18)
+[packages/ai-tool-llm/src/llm-options.ts:129](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-options.ts#L129)
 
 ___
 
@@ -334,7 +294,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:216](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-provider.ts#L216)
+[packages/ai-tool-llm/src/llm-provider.ts:215](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-provider.ts#L215)
 
 ___
 
@@ -375,54 +335,4 @@ const mappedOpts = mapApiOptions(originalOpts, mapping);
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:112](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/llm-options.ts#L112)
-
-___
-
-### paramsSizeToScaleStr
-
-▸ **paramsSizeToScaleStr**(`paramsSize`, `fractionDigits?`): `string`
-
-Formats a parameter size in bytes into a string with an appropriate scale (T, B, M, or K),
-optionally specifying the number of fractional digits to display.
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `paramsSize` | `number` | `undefined` | The parameter size in bytes. |
-| `fractionDigits` | `number` | `0` | The number of fractional digits to include in the formatted output. Default is 0 (no fractional digits). |
-
-#### Returns
-
-`string`
-
-A string representing the formatted parameter size with the appropriate scale unit and the specified number of fractional digits.
-
-#### Defined in
-
-[packages/ai-tool-llm/src/utils/convert-params-size.ts:11](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/utils/convert-params-size.ts#L11)
-
-___
-
-### scaleStrToParamsSize
-
-▸ **scaleStrToParamsSize**(`scale`): `number`
-
-Converts a formatted parameters size string (with units T, B, M, or K) back to its byte value.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `scale` | `string` | The formatted parameter size string (e.g., "1.23B", "456M", "789K", or "123"). |
-
-#### Returns
-
-`number`
-
-The parameter size in bytes.
-
-#### Defined in
-
-[packages/ai-tool-llm/src/utils/convert-params-size.ts:44](https://github.com/isdk/ai-tool-llm.js/blob/b1a069008f06d0b818c0913820aaddab45c2d2fc/src/utils/convert-params-size.ts#L44)
+[packages/ai-tool-llm/src/llm-options.ts:112](https://github.com/isdk/ai-tool-llm.js/blob/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2/src/llm-options.ts#L112)

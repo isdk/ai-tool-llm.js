@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.12](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.11...v0.0.12) (2024-08-11)
+
+
+### Bug Fixes
+
+* update AIModelQuantType from llama.cpp ([ff7ddc0](https://github.com/isdk/ai-tool-llm.js/commit/ff7ddc09d6fb8e595ba8892085851f6a87b2f4d2))
+
+
+### Refactor
+
+* extract model to package ([50708dd](https://github.com/isdk/ai-tool-llm.js/commit/50708dd1c1c99c19fc6dff65dc60243437054ebc))
+* paramsSizeToScaleStr ([7dce953](https://github.com/isdk/ai-tool-llm.js/commit/7dce9538f1ed07183aa72267950ceb96d0cac0d0))
+
 ## [0.0.11](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.10...v0.0.11) (2024-07-08)
 
 

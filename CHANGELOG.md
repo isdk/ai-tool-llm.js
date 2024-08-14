@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.13](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.12...v0.0.13) (2024-08-14)
+
+
+### Features
+
+* add fill to AIModelType ([f87f1bc](https://github.com/isdk/ai-tool-llm.js/commit/f87f1bc43347c3e33860764fe45e596f962961c0))
+
+
+### Bug Fixes
+
+* typo infill ([3f5b758](https://github.com/isdk/ai-tool-llm.js/commit/3f5b7587d36e42fec20e053d3cf13eddc9014435))
+
 ## [0.0.12](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.11...v0.0.12) (2024-08-11)
 
 

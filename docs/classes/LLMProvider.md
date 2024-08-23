@@ -25,6 +25,7 @@
 - [defaultOptions](LLMProvider.md#defaultoptions)
 - [depends](LLMProvider.md#depends)
 - [description](LLMProvider.md#description)
+- [isApi](LLMProvider.md#isapi)
 - [name](LLMProvider.md#name)
 - [nonExported1stChar](LLMProvider.md#nonexported1stchar)
 - [params](LLMProvider.md#params)
@@ -33,6 +34,7 @@
 - [rule](LLMProvider.md#rule)
 - [scope](LLMProvider.md#scope)
 - [setup](LLMProvider.md#setup)
+- [stream](LLMProvider.md#stream)
 - [supports](LLMProvider.md#supports)
 - [tags](LLMProvider.md#tags)
 - [current](LLMProvider.md#current)
@@ -151,7 +153,7 @@ AIProviderSettings.constructor
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:78
+packages/ai-tool/dist/index-DvpywQaE.d.ts:80
 
 ## Properties
 
@@ -175,7 +177,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-settings.ts#L23)
+[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-settings.ts#L23)
 
 ___
 
@@ -189,7 +191,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-settings.ts#L24)
+[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-settings.ts#L24)
 
 ___
 
@@ -236,7 +238,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L41)
+[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L41)
 
 ___
 
@@ -246,7 +248,17 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:34](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L34)
+[packages/ai-tool-llm/src/llm-provider.ts:34](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L34)
+
+___
+
+### isApi
+
+• `Optional` **isApi**: `boolean`
+
+#### Defined in
+
+packages/ai-tool/dist/index-DvpywQaE.d.ts:42
 
 ___
 
@@ -256,7 +268,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:36
+packages/ai-tool/dist/index-DvpywQaE.d.ts:36
 
 ___
 
@@ -295,7 +307,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:35](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L35)
+[packages/ai-tool-llm/src/llm-provider.ts:35](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L35)
 
 ___
 
@@ -309,7 +321,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-settings.ts#L21)
+[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-settings.ts#L21)
 
 ___
 
@@ -319,7 +331,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L40)
+[packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L40)
 
 ___
 
@@ -333,7 +345,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-settings.ts#L20)
+[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-settings.ts#L20)
 
 ___
 
@@ -343,7 +355,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:39
+packages/ai-tool/dist/index-DvpywQaE.d.ts:39
 
 ___
 
@@ -368,7 +380,17 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:41
+packages/ai-tool/dist/index-DvpywQaE.d.ts:41
+
+___
+
+### stream
+
+• `Optional` **stream**: `boolean`
+
+#### Defined in
+
+packages/ai-tool/dist/index-DvpywQaE.d.ts:43
 
 ___
 
@@ -382,7 +404,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-settings.ts#L22)
+[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-settings.ts#L22)
 
 ___
 
@@ -392,7 +414,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:40
+packages/ai-tool/dist/index-DvpywQaE.d.ts:40
 
 ___
 
@@ -402,7 +424,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L30)
+[packages/ai-tool-llm/src/llm-provider.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L30)
 
 ___
 
@@ -412,7 +434,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:62
+packages/ai-tool/dist/index-DvpywQaE.d.ts:64
 
 ___
 
@@ -426,7 +448,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:32](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L32)
+[packages/ai-tool-llm/src/llm-provider.ts:32](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L32)
 
 ## Methods
 
@@ -447,7 +469,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L22)
+[packages/ai-tool-llm/src/llm-provider.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L22)
 
 ___
 
@@ -467,7 +489,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:81
+packages/ai-tool/dist/index-DvpywQaE.d.ts:83
 
 ___
 
@@ -665,7 +687,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L23)
+[packages/ai-tool-llm/src/llm-provider.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L23)
 
 ___
 
@@ -717,7 +739,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:168](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L168)
+[packages/ai-tool-llm/src/llm-provider.ts:168](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L168)
 
 ___
 
@@ -737,7 +759,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L76)
+[packages/ai-tool-llm/src/llm-provider.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L76)
 
 ___
 
@@ -760,7 +782,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:133](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L133)
+[packages/ai-tool-llm/src/llm-provider.ts:133](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L133)
 
 ___
 
@@ -774,7 +796,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:107](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L107)
+[packages/ai-tool-llm/src/llm-provider.ts:107](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L107)
 
 ___
 
@@ -795,7 +817,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:210](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L210)
+[packages/ai-tool-llm/src/llm-provider.ts:210](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L210)
 
 ___
 
@@ -815,7 +837,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:87
+packages/ai-tool/dist/index-DvpywQaE.d.ts:89
 
 ___
 
@@ -835,7 +857,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:92
+packages/ai-tool/dist/index-DvpywQaE.d.ts:94
 
 ___
 
@@ -855,7 +877,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:119](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L119)
+[packages/ai-tool-llm/src/llm-provider.ts:119](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L119)
 
 ___
 
@@ -895,7 +917,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:93
+packages/ai-tool/dist/index-DvpywQaE.d.ts:95
 
 ___
 
@@ -962,7 +984,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:67](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L67)
+[packages/ai-tool-llm/src/llm-provider.ts:67](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L67)
 
 ___
 
@@ -1027,7 +1049,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:72](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L72)
+[packages/ai-tool-llm/src/llm-provider.ts:72](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L72)
 
 ___
 
@@ -1041,7 +1063,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L20)
+[packages/ai-tool-llm/src/llm-provider.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L20)
 
 ___
 
@@ -1063,7 +1085,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L92)
+[packages/ai-tool-llm/src/llm-provider.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L92)
 
 ___
 
@@ -1108,7 +1130,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:82
+packages/ai-tool/dist/index-DvpywQaE.d.ts:84
 
 ___
 
@@ -1144,7 +1166,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:79
+packages/ai-tool/dist/index-DvpywQaE.d.ts:81
 
 ___
 
@@ -1164,7 +1186,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:84
+packages/ai-tool/dist/index-DvpywQaE.d.ts:86
 
 ___
 
@@ -1185,7 +1207,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:85
+packages/ai-tool/dist/index-DvpywQaE.d.ts:87
 
 ___
 
@@ -1206,7 +1228,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:86
+packages/ai-tool/dist/index-DvpywQaE.d.ts:88
 
 ___
 
@@ -1226,7 +1248,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:83
+packages/ai-tool/dist/index-DvpywQaE.d.ts:85
 
 ___
 
@@ -1246,7 +1268,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:90
+packages/ai-tool/dist/index-DvpywQaE.d.ts:92
 
 ___
 
@@ -1267,7 +1289,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:91
+packages/ai-tool/dist/index-DvpywQaE.d.ts:93
 
 ___
 
@@ -1288,7 +1310,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:89
+packages/ai-tool/dist/index-DvpywQaE.d.ts:91
 
 ___
 
@@ -1308,7 +1330,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:88
+packages/ai-tool/dist/index-DvpywQaE.d.ts:90
 
 ___
 
@@ -1328,7 +1350,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:111](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L111)
+[packages/ai-tool-llm/src/llm-provider.ts:111](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L111)
 
 ___
 
@@ -1412,7 +1434,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:80
+packages/ai-tool/dist/index-DvpywQaE.d.ts:82
 
 ___
 
@@ -1433,7 +1455,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L21)
+[packages/ai-tool-llm/src/llm-provider.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L21)
 
 ___
 
@@ -1842,7 +1864,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:63
+packages/ai-tool/dist/index-DvpywQaE.d.ts:65
 
 ___
 
@@ -1862,7 +1884,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:66
+packages/ai-tool/dist/index-DvpywQaE.d.ts:68
 
 ___
 
@@ -1882,7 +1904,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:43](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L43)
+[packages/ai-tool-llm/src/llm-provider.ts:43](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L43)
 
 ___
 
@@ -1902,7 +1924,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:65
+packages/ai-tool/dist/index-DvpywQaE.d.ts:67
 
 ___
 
@@ -1916,7 +1938,7 @@ ___
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:61](https://github.com/isdk/ai-tool-llm.js/blob/87cb66c3d225bfc45ecd63fc2cbe6e1cff922e2d/src/llm-provider.ts#L61)
+[packages/ai-tool-llm/src/llm-provider.ts:61](https://github.com/isdk/ai-tool-llm.js/blob/203032ba889a8cda6860e4618184af86a439da21/src/llm-provider.ts#L61)
 
 ___
 
@@ -1936,7 +1958,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:70
+packages/ai-tool/dist/index-DvpywQaE.d.ts:72
 
 ___
 
@@ -1956,7 +1978,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:73
+packages/ai-tool/dist/index-DvpywQaE.d.ts:75
 
 ___
 
@@ -2111,7 +2133,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:67
+packages/ai-tool/dist/index-DvpywQaE.d.ts:69
 
 ___
 
@@ -2254,7 +2276,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:64
+packages/ai-tool/dist/index-DvpywQaE.d.ts:66
 
 ___
 
@@ -2303,7 +2325,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:74
+packages/ai-tool/dist/index-DvpywQaE.d.ts:76
 
 ▸ **register**(`func`, `options`): `boolean` \| `ToolFunc`
 
@@ -2320,7 +2342,7 @@ packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:74
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:75
+packages/ai-tool/dist/index-DvpywQaE.d.ts:77
 
 ▸ **register**(`name`, `options?`): `boolean` \| `ToolFunc`
 
@@ -2337,7 +2359,7 @@ packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:75
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:76
+packages/ai-tool/dist/index-DvpywQaE.d.ts:78
 
 ___
 
@@ -2358,7 +2380,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:68
+packages/ai-tool/dist/index-DvpywQaE.d.ts:70
 
 ___
 
@@ -2379,7 +2401,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:69
+packages/ai-tool/dist/index-DvpywQaE.d.ts:71
 
 ___
 
@@ -2400,7 +2422,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:71
+packages/ai-tool/dist/index-DvpywQaE.d.ts:73
 
 ___
 
@@ -2421,7 +2443,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:72
+packages/ai-tool/dist/index-DvpywQaE.d.ts:74
 
 ___
 
@@ -2492,7 +2514,7 @@ ___
 
 #### Defined in
 
-packages/ai-tool/dist/index-Dgo3ZXPQ.d.ts:77
+packages/ai-tool/dist/index-DvpywQaE.d.ts:79
 
 ___
 

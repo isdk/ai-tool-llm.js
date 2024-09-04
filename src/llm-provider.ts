@@ -38,7 +38,7 @@ export class LLMProvider extends ToolFunc {
     options: {name: 'options', type: 'any', description: 'the LLM model options'},
   }
   result = 'object'
-  depends = { [EventBusName]: event }
+  depends: {[name: string]: ToolFunc} = { [EventBusName]: event }
 
   static getByModel(modelName?: string) {
     if (modelName) {

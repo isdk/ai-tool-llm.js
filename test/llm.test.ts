@@ -24,7 +24,8 @@ const promptsFunc = new AIPromptsFunc(AIPromptsName, {dbPath: ':memory:'})
 const testLLMProvider = new TestLLMProvider('LLMTest')
 
 describe('LLMProvider', ()=>{
-  beforeAll(()=>{
+  beforeAll(async ()=>{
+    await promptsFunc.initData()
     ToolFunc.register(promptsFunc)
     testLLMProvider.register()
   })

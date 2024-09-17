@@ -1,52 +1,47 @@
-[@isdk/ai-tool-llm](../README.md) / [Exports](../modules.md) / LLMArguments
+[**@isdk/ai-tool-llm**](../README.md) • **Docs**
+
+***
+
+[@isdk/ai-tool-llm](../globals.md) / LLMArguments
 
 # Interface: LLMArguments
 
-## Table of contents
-
-### Properties
-
-- [model](LLMArguments.md#model)
-- [options](LLMArguments.md#options)
-- [provider](LLMArguments.md#provider)
-- [value](LLMArguments.md#value)
-
 ## Properties
 
-### model
+### model?
 
-• `Optional` **model**: `string`
-
-#### Defined in
-
-[packages/ai-tool-llm/src/llm-options.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L89)
-
-___
-
-### options
-
-• `Optional` **options**: [`AIOptions`](AIOptions.md)
+> `optional` **model**: `string`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:91](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L91)
+[packages/ai-tool-llm/src/llm-options.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L89)
 
-___
+***
 
-### provider
+### options?
 
-• `Optional` **provider**: `string`
-
-#### Defined in
-
-[packages/ai-tool-llm/src/llm-options.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L92)
-
-___
-
-### value
-
-• `Optional` **value**: `any`
+> `optional` **options**: [`AIOptions`](AIOptions.md)
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L90)
+[packages/ai-tool-llm/src/llm-options.ts:91](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L91)
+
+***
+
+### provider?
+
+> `optional` **provider**: `string`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L92)
+
+***
+
+### value?
+
+> `optional` **value**: `any`
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-options.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L90)

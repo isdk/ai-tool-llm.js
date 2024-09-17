@@ -1,4 +1,6 @@
-@isdk/ai-tool-llm / [Exports](modules.md)
+**@isdk/ai-tool-llm** • [**Docs**](globals.md)
+
+***
 
 # ai-tool-llm
 

@@ -1,30 +1,27 @@
-[@isdk/ai-tool-llm](../README.md) / [Exports](../modules.md) / AIResponseFormat
+[**@isdk/ai-tool-llm**](../README.md) • **Docs**
+
+***
+
+[@isdk/ai-tool-llm](../globals.md) / AIResponseFormat
 
 # Interface: AIResponseFormat
 
-## Table of contents
-
-### Properties
-
-- [schema](AIResponseFormat.md#schema)
-- [type](AIResponseFormat.md#type)
-
 ## Properties
 
-### schema
+### schema?
 
-• `Optional` **schema**: `any`
+> `optional` **schema**: `any`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L14)
+[packages/ai-tool-llm/src/llm-options.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L14)
 
-___
+***
 
 ### type
 
-• **type**: [`AIResponseFormatType`](../modules.md#airesponseformattype)
+> **type**: [`AIResponseFormatType`](../type-aliases/AIResponseFormatType.md)
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-options.ts#L13)
+[packages/ai-tool-llm/src/llm-options.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L13)

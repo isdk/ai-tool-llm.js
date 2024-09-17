@@ -1,13 +1,15 @@
-[@isdk/ai-tool-llm](../README.md) / [Exports](../modules.md) / AIOptions
+[**@isdk/ai-tool-llm**](../README.md) • **Docs**
+
+***
+
+[@isdk/ai-tool-llm](../globals.md) / AIOptions
 
 # Interface: AIOptions
 
-## Hierarchy
+## Extended by
 
-- **`AIOptions`**
-
-  ↳ [`AITextGenerationOptions`](AITextGenerationOptions.md)
+- [`AITextGenerationOptions`](AITextGenerationOptions.md)
 
 ## Indexable
 
-▪ [name: `string`]: `any`
+ \[`name`: `string`\]: `any`

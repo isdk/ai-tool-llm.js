@@ -1,62 +1,57 @@
-[@isdk/ai-tool-llm](../README.md) / [Exports](../modules.md) / AIModelSkill
+[**@isdk/ai-tool-llm**](../README.md) • **Docs**
+
+***
+
+[@isdk/ai-tool-llm](../globals.md) / AIModelSkill
 
 # Interface: AIModelSkill
 
 Defines the structure of an individual skill, including its name, description (optional), type, and scores (if available).
 
-## Table of contents
-
-### Properties
-
-- [description](AIModelSkill.md#description)
-- [name](AIModelSkill.md#name)
-- [score](AIModelSkill.md#score)
-- [type](AIModelSkill.md#type)
-
 ## Properties
 
-### description
+### description?
 
-• `Optional` **description**: `string`
+> `optional` **description**: `string`
 
 An optional textual description providing additional context about the skill's function or purpose.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-skills.ts#L54)
+[packages/ai-tool-llm/src/llm-skills.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L54)
 
-___
+***
 
 ### name
 
-• **name**: [`AIModelSkillName`](../modules.md#aimodelskillname)
+> **name**: [`AIModelSkillName`](../type-aliases/AIModelSkillName.md)
 
 The name of the skill as recognized by users or internal to the system.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-skills.ts#L52)
+[packages/ai-tool-llm/src/llm-skills.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L52)
 
-___
+***
 
-### score
+### score?
 
-• `Optional` **score**: [`AIModelSkillScore`](AIModelSkillScore.md)[]
+> `optional` **score**: [`AIModelSkillScore`](AIModelSkillScore.md)[]
 
 An array of scores associated with this skill, reflecting evaluations by different authorities or user feedback.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:58](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-skills.ts#L58)
+[packages/ai-tool-llm/src/llm-skills.ts:58](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L58)
 
-___
+***
 
-### type
+### type?
 
-• `Optional` **type**: ``"internal"`` \| ``"public"``
+> `optional` **type**: `"internal"` \| `"public"`
 
 Indicates whether this skill is internal (system-specific) or public (user-facing). Defaults to 'public'.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/00bdb4dabf26affba1e99ea1f0c654c315a2dfba/src/llm-skills.ts#L56)
+[packages/ai-tool-llm/src/llm-skills.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L56)

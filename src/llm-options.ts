@@ -5,13 +5,15 @@ export interface AIOptions {
   [name: string]: any
 }
 
-const AIResponseFormatTypes = ['json_object', 'json_array'] as const
+const AIResponseFormatTypes = ['text', 'json_object', 'json_array', 'json_schema'] as const
 
 export type AIResponseFormatType = typeof AIResponseFormatTypes[number] | (string & { })
 
 export interface AIResponseFormat {
   type: AIResponseFormatType
   schema?: any
+  name?: string
+  description?: string
 }
 
 export interface AITextGenerationOptions extends AIOptions {

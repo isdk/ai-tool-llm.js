@@ -166,4 +166,5 @@ export const LLMProviderSchema = {
     ],
   },
   prior: {type: 'number'},
+  model: {type: 'string'},
 }

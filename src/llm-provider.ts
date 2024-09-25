@@ -21,6 +21,7 @@ export interface LLMProvider extends AIProviderSettings {
   updateModel?(modelName: string, model: any): Promise<any>
   addModel?(modelName: string, model: any): Promise<any>
   deleteModel?(modelName: string): Promise<any>
+  model?: string
 }
 
 const LLMProviders: {[name: string]: LLMProvider} = {}

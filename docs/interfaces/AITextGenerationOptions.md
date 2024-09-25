@@ -20,7 +20,7 @@ Specify the context window size of the model that you have loaded.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:37](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L37)
+[packages/ai-tool-llm/src/llm-options.ts:39](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L39)
 
 ***
 
@@ -30,7 +30,7 @@ Specify the context window size of the model that you have loaded.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L81)
+[packages/ai-tool-llm/src/llm-options.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L83)
 
 ***
 
@@ -51,7 +51,7 @@ Example: `gen_count: 3` // The model will produce 3 different responses.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:68](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L68)
+[packages/ai-tool-llm/src/llm-options.ts:70](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L70)
 
 ***
 
@@ -68,7 +68,7 @@ Example: `max_tokens: 1000`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L31)
+[packages/ai-tool-llm/src/llm-options.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L33)
 
 ***
 
@@ -78,7 +78,7 @@ Example: `max_tokens: 1000`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L82)
+[packages/ai-tool-llm/src/llm-options.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L84)
 
 ***
 
@@ -88,7 +88,7 @@ Example: `max_tokens: 1000`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L80)
+[packages/ai-tool-llm/src/llm-options.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L82)
 
 ***
 
@@ -98,7 +98,7 @@ Example: `max_tokens: 1000`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L83)
+[packages/ai-tool-llm/src/llm-options.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L85)
 
 ***
 
@@ -110,7 +110,7 @@ the alias of stop_words
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L54)
+[packages/ai-tool-llm/src/llm-options.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L56)
 
 ***
 
@@ -130,7 +130,7 @@ Example: `stop_words: ['\n', 'END']`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:50](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L50)
+[packages/ai-tool-llm/src/llm-options.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L52)
 
 ***
 
@@ -140,7 +140,7 @@ Example: `stop_words: ['\n', 'END']`
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L78)
+[packages/ai-tool-llm/src/llm-options.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L80)
 
 ***
 
@@ -152,7 +152,7 @@ Adjust the randomness of the generated text.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L21)
+[packages/ai-tool-llm/src/llm-options.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L23)
 
 ***
 
@@ -162,7 +162,7 @@ Adjust the randomness of the generated text.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L85)
+[packages/ai-tool-llm/src/llm-options.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L87)
 
 ***
 
@@ -172,7 +172,7 @@ Adjust the randomness of the generated text.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L84)
+[packages/ai-tool-llm/src/llm-options.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L86)
 
 ***
 
@@ -187,4 +187,4 @@ Default: true.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-options.ts#L76)
+[packages/ai-tool-llm/src/llm-options.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-options.ts#L78)

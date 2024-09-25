@@ -18,7 +18,7 @@ An optional textual description providing additional context about the skill's f
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L54)
+[packages/ai-tool-llm/src/llm-skills.ts:54](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-skills.ts#L54)
 
 ***
 
@@ -30,7 +30,7 @@ The name of the skill as recognized by users or internal to the system.
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L52)
+[packages/ai-tool-llm/src/llm-skills.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-skills.ts#L52)
 
 ***
 
@@ -42,7 +42,7 @@ An array of scores associated with this skill, reflecting evaluations by differe
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:58](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L58)
+[packages/ai-tool-llm/src/llm-skills.ts:58](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-skills.ts#L58)
 
 ***
 
@@ -54,4 +54,4 @@ Indicates whether this skill is internal (system-specific) or public (user-facin
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/513ef97c99c1327a132052f4cc5520be2c9cf2e0/src/llm-skills.ts#L56)
+[packages/ai-tool-llm/src/llm-skills.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-skills.ts#L56)

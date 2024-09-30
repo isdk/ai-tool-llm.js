@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L92)
+[packages/ai-tool-llm/src/llm-settings.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L92)
 
 ***
 
@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:126](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L126)
+[packages/ai-tool-llm/src/llm-settings.ts:126](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L126)
 
 ***
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:129](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L129)
+[packages/ai-tool-llm/src/llm-settings.ts:129](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L129)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:130](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L130)
+[packages/ai-tool-llm/src/llm-settings.ts:130](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L130)
 
 ***
 
@@ -80,7 +80,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:107](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L107)
+[packages/ai-tool-llm/src/llm-settings.ts:107](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L107)
 
 ***
 
@@ -94,7 +94,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:132](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L132)
+[packages/ai-tool-llm/src/llm-settings.ts:132](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L132)
 
 ***
 
@@ -108,7 +108,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:125](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L125)
+[packages/ai-tool-llm/src/llm-settings.ts:125](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L125)
 
 ***
 
@@ -122,7 +122,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:135](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L135)
+[packages/ai-tool-llm/src/llm-settings.ts:135](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L135)
 
 ***
 
@@ -136,7 +136,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:123](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L123)
+[packages/ai-tool-llm/src/llm-settings.ts:123](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L123)
 
 ***
 
@@ -150,7 +150,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:121](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L121)
+[packages/ai-tool-llm/src/llm-settings.ts:121](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L121)
 
 ***
 
@@ -164,7 +164,7 @@ the content length in train
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:142](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L142)
+[packages/ai-tool-llm/src/llm-settings.ts:142](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L142)
 
 ***
 
@@ -180,7 +180,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:117](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L117)
+[packages/ai-tool-llm/src/llm-settings.ts:117](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L117)
 
 ***
 
@@ -194,7 +194,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:131](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L131)
+[packages/ai-tool-llm/src/llm-settings.ts:131](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L131)
 
 ***
 
@@ -208,7 +208,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:127](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L127)
+[packages/ai-tool-llm/src/llm-settings.ts:127](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L127)
 
 ***
 
@@ -222,7 +222,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:122](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L122)
+[packages/ai-tool-llm/src/llm-settings.ts:122](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L122)
 
 ***
 
@@ -236,7 +236,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:128](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L128)
+[packages/ai-tool-llm/src/llm-settings.ts:128](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L128)
 
 ***
 
@@ -246,7 +246,7 @@ hugging-face repo name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:148](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L148)
+[packages/ai-tool-llm/src/llm-settings.ts:148](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L148)
 
 ***
 
@@ -262,7 +262,7 @@ the model unique name, but not the unique in db
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:96](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L96)
+[packages/ai-tool-llm/src/llm-settings.ts:96](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L96)
 
 ***
 
@@ -278,7 +278,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:103](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L103)
+[packages/ai-tool-llm/src/llm-settings.ts:103](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L103)
 
 ***
 
@@ -292,7 +292,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L120)
+[packages/ai-tool-llm/src/llm-settings.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L120)
 
 ***
 
@@ -306,7 +306,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:109](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L109)
+[packages/ai-tool-llm/src/llm-settings.ts:109](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L109)
 
 ***
 
@@ -320,7 +320,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:119](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L119)
+[packages/ai-tool-llm/src/llm-settings.ts:119](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L119)
 
 ***
 
@@ -334,7 +334,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:99](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L99)
+[packages/ai-tool-llm/src/llm-settings.ts:99](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L99)
 
 ***
 
@@ -348,7 +348,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:98](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L98)
+[packages/ai-tool-llm/src/llm-settings.ts:98](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L98)
 
 ***
 
@@ -362,7 +362,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:124](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L124)
+[packages/ai-tool-llm/src/llm-settings.ts:124](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L124)
 
 ***
 
@@ -376,7 +376,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:97](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L97)
+[packages/ai-tool-llm/src/llm-settings.ts:97](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L97)
 
 ***
 
@@ -390,7 +390,7 @@ the model params size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:133](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L133)
+[packages/ai-tool-llm/src/llm-settings.ts:133](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L133)
 
 ***
 
@@ -406,4 +406,4 @@ the remote url to download the model
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:113](https://github.com/isdk/ai-tool-llm.js/blob/c551b330a82a79e61c6412bbe0899ddc282205b8/src/llm-settings.ts#L113)
+[packages/ai-tool-llm/src/llm-settings.ts:113](https://github.com/isdk/ai-tool-llm.js/blob/315c5c48f20c16c3cb62039cc17ee2a5600b85aa/src/llm-settings.ts#L113)

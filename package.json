@@ -33,6 +33,7 @@
     "@isdk/ai-tool-downloader": "workspace:*",
     "@isdk/ai-tool-prompt": "workspace:*",
     "@isdk/ai-tool-sqlite": "workspace:*",
+    "@xenova/transformers": "^2.17.2",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
@@ -55,6 +56,7 @@
     "typedoc-plugin-markdown": "^4.2.7",
     "typescript": "^5.6.2",
     "vite": "^5.4.6",
+    "vite-plugin-wasm": "^3.3.0",
     "vitest": "^2.1.1",
     "vitest-fetch-mock": "^0.3.0",
     "zod": "^3.23.8"
@@ -62,7 +64,7 @@
   "files": [
     "docs",
     "dist",
-    "models/gguf-models.json"
+    ".cache"
   ],
   "keywords": [
     "ai",

@@ -76,6 +76,16 @@ describe('LLMProvider', ()=>{
       2+3=<|end|>
       <|assistant|>"
     `)
+  })
 
+  it('should countTokens', async ()=>{
+    const result = await testLLMProvider.countTokens('phi-3.test hi')
+    expect(result).toBeGreaterThanOrEqual(5)
+  })
+
+  it('should tokenize', async ()=>{
+    const result = await testLLMProvider.tokenize('phi-3.test hi')
+    expect(result).toBeInstanceOf(Array)
+    expect(result).toHaveLength(5)
   })
 })

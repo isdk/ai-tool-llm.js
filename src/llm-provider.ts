@@ -1,5 +1,6 @@
 import {
   AIResult,
+  countLLMTokens, encodeLLMTokens,
   EventBusName,
   event,
   isModelNameMatched,
@@ -15,7 +16,6 @@ import {
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
 import { LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
-import { countTokens, encodeTokens } from './llm-tokenizer'
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>
@@ -214,11 +214,11 @@ export class LLMProvider extends ToolFunc {
   }
 
   async tokenize(text: string, modelId: string = 'gpt-4') {
-    return encodeTokens(text, modelId)
+    return encodeLLMTokens(text, modelId)
   }
 
   async countTokens(text: string, modelId: string = 'gpt-4') {
-    return countTokens(text, modelId)
+    return countLLMTokens(text, modelId)
   }
 }
 

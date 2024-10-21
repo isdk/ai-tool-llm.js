@@ -213,11 +213,11 @@ export class LLMProvider extends ToolFunc {
     return getLLMParameters(chatTemplate, model)
   }
 
-  async tokenize(text: string, modelId: string = 'qwen2.5') {
+  async tokenize(text: string, {modelId = 'qwen2.5'}: {modelId?: string} = {}) {
     return encodeLLMTokens(text, modelId)
   }
 
-  async countTokens(text: string, modelId: string = 'qwen2.5') {
+  async countTokens(text: string, {modelId = 'qwen2.5'}: {modelId?: string} = {}) {
     return countLLMTokens(text, modelId)
   }
 }

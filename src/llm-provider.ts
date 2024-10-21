@@ -85,6 +85,9 @@ export class LLMProvider extends ToolFunc {
           input.model = model.replace(protocol+'://', '')
         }
       }
+      if (input.onlyTokenizer) {
+        return provider.tokenize(input.value)
+      }
       return provider.func(input)
     } else {
       throw new NotImplementationError('no current provider')

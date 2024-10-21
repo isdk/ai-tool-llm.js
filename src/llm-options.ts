@@ -92,6 +92,7 @@ export interface LLMArguments {
   value?: any
   options?: AIOptions
   provider?: string
+  onlyTokenizer?: boolean
 }
 
 export type AITextGenerationResult = AIResult<string>

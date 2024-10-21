@@ -1,6 +1,6 @@
 import {
   AIResult,
-  countLLMTokens, encodeLLMTokens,
+  encodeLLMTokens,
   EventBusName,
   event,
   isModelNameMatched,
@@ -14,8 +14,12 @@ import {
   paramsSizeToScaleStr,
 } from '@isdk/ai-tool'
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
-import { LLMArguments } from './llm-options'
+import { AIOptions, LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
+
+export interface AITokenizeOptions extends AIOptions {
+  model?: string
+}
 
 export interface LLMProvider extends AIProviderSettings {
   listModels?(): Promise<string[]|undefined>
@@ -86,7 +90,7 @@ export class LLMProvider extends ToolFunc {
         }
       }
       if (input.onlyTokenizer) {
-        return provider.tokenize(input.value)
+        return provider.tokenize(input.value, input)
       }
       return provider.func(input)
     } else {
@@ -216,12 +220,18 @@ export class LLMProvider extends ToolFunc {
     return getLLMParameters(chatTemplate, model)
   }
 
-  async tokenize(text: string, {modelId = 'qwen2.5'}: {modelId?: string} = {}) {
-    return encodeLLMTokens(text, modelId)
+  async tokenize(text: string|AIChatMessageParam[], options: AITokenizeOptions = {}) {
+    const model = options.model ?? 'qwen2.5'
+    if (Array.isArray(text)) {
+      const prompt = await this.formatPrompt(text, model, options as any)
+      if (!prompt) {throw new NotFoundError('ChatTemplate:'+ model, 'LLMProvider.tokenize')}
+      text = prompt
+    }
+    return encodeLLMTokens(text, model)
   }
 
-  async countTokens(text: string, {modelId = 'qwen2.5'}: {modelId?: string} = {}) {
-    return countLLMTokens(text, modelId)
+  async countTokens(text: string|AIChatMessageParam[], options?: AITokenizeOptions) {
+    return this.tokenize(text, options)
   }
 }
 

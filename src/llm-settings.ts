@@ -63,6 +63,10 @@ export enum AIModelQuantType {
   Q4_0_8_8      = 35, // except 1d tensors
 
   GUESSED = 1024, // not specified in the model file
+  // the standard quantization method with the embeddings and output weights quantized to Q8_0:
+  Q4_K_L = 1025,
+  Q3_K_XL = 1026,
+  Q2_K_L = 1027,
 }
 
 export interface AIModelFileSettings {

@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.0](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.28...v0.1.0) (2024-12-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* use options parameter
+* use qwen2.5 as default llm token estimate count
+* add countTokens and tokenize to provider
+
+### Features
+
+* add countTokens and tokenize to provider ([9a7cebb](https://github.com/isdk/ai-tool-llm.js/commit/9a7cebb1a3ef992619d73efedd29085860233b99))
+* add non-stadard quatizations ([6dca0b0](https://github.com/isdk/ai-tool-llm.js/commit/6dca0b043de83937d92e2b5f936238ef46f7ef86))
+* add onlyTokenizer option ([bc58d61](https://github.com/isdk/ai-tool-llm.js/commit/bc58d61b7dc8bd8b6aaf9e067bc612fb500d5730))
+
+
+### Refactor
+
+* extract llm-token to ai-tool ([46dd775](https://github.com/isdk/ai-tool-llm.js/commit/46dd775df6922d1eb03bdff8b1467a6118f3d066))
+* messsages[] supports ([12dbb7b](https://github.com/isdk/ai-tool-llm.js/commit/12dbb7b7cfb542e099b82dc4643a19c2578ffc12))
+* use options parameter ([b4f5fed](https://github.com/isdk/ai-tool-llm.js/commit/b4f5fed7c2e8597f9360dc35b7beb23747354927))
+* use qwen2.5 as default llm token estimate count ([e236cb3](https://github.com/isdk/ai-tool-llm.js/commit/e236cb376cf8b3ff5022df20c7ca1f0158c43b11))
+
 ## [0.0.28](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.27...v0.0.28) (2024-10-04)
 
 ## [0.0.27](https://github.com/isdk/ai-tool-llm.js/compare/v0.0.26...v0.0.27) (2024-09-30)

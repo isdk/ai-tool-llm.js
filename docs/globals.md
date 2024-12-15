@@ -25,6 +25,7 @@
 - [AIProviderSettings](interfaces/AIProviderSettings.md)
 - [AIResponseFormat](interfaces/AIResponseFormat.md)
 - [AITextGenerationOptions](interfaces/AITextGenerationOptions.md)
+- [AITokenizeOptions](interfaces/AITokenizeOptions.md)
 - [LLMArguments](interfaces/LLMArguments.md)
 
 ## Type Aliases

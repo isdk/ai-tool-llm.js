@@ -12,4 +12,4 @@ Lists the names of skills that are internal to the system and not directly obser
 
 ## Defined in
 
-[packages/ai-tool-llm/src/llm-skills.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-skills.ts#L38)
+[packages/ai-tool-llm/src/llm-skills.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-skills.ts#L38)

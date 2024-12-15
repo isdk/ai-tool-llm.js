@@ -32,7 +32,7 @@
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:80
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:80
 
 ## Properties
 
@@ -56,7 +56,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ad
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-settings.ts#L23)
+[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L23)
 
 ***
 
@@ -70,7 +70,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ad
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-settings.ts#L24)
+[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L24)
 
 ***
 
@@ -82,7 +82,7 @@ The initial value of Object.prototype.constructor is the standard built-in Objec
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:125
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:125
 
 ***
 
@@ -116,7 +116,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:42](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L42)
+[packages/ai-tool-llm/src/llm-provider.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L47)
 
 ***
 
@@ -126,7 +126,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:35](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L35)
+[packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L40)
 
 ***
 
@@ -136,7 +136,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:42
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:42
 
 ***
 
@@ -146,7 +146,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:42
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L24)
+[packages/ai-tool-llm/src/llm-provider.ts:29](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L29)
 
 ***
 
@@ -156,7 +156,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:42
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:36
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:36
 
 ***
 
@@ -226,7 +226,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:36](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L36)
+[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L41)
 
 ***
 
@@ -240,7 +240,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-settings.ts#L21)
+[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L21)
 
 ***
 
@@ -250,7 +250,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L41)
+[packages/ai-tool-llm/src/llm-provider.ts:46](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L46)
 
 ***
 
@@ -264,7 +264,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-settings.ts#L20)
+[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L20)
 
 ***
 
@@ -274,7 +274,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:39
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:39
 
 ***
 
@@ -294,7 +294,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:39
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:41
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:41
 
 ***
 
@@ -304,7 +304,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:41
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:43
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:43
 
 ***
 
@@ -318,7 +318,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:43
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-settings.ts#L22)
+[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L22)
 
 ***
 
@@ -328,7 +328,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:43
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:40
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:40
 
 ***
 
@@ -338,7 +338,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:40
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L31)
+[packages/ai-tool-llm/src/llm-provider.ts:36](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L36)
 
 ***
 
@@ -348,7 +348,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:40
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:64
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:64
 
 ***
 
@@ -362,7 +362,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:64
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L33)
+[packages/ai-tool-llm/src/llm-provider.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L38)
 
 ## Methods
 
@@ -382,7 +382,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:64
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L22)
+[packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L27)
 
 ***
 
@@ -400,7 +400,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:64
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:83
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:83
 
 ***
 
@@ -580,6 +580,26 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 ***
 
+### countTokens()
+
+> **countTokens**(`text`, `options`?): `Promise`\<`number`[]\>
+
+#### Parameters
+
+• **text**: `string` \| `AIChatMessageParam`[]
+
+• **options?**: [`AITokenizeOptions`](../interfaces/AITokenizeOptions.md)
+
+#### Returns
+
+`Promise`\<`number`[]\>
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-provider.ts:233](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L233)
+
+***
+
 ### defineProperties()
 
 > `abstract` **defineProperties**(`aProperties`): `any`
@@ -616,7 +636,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L23)
+[packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L28)
 
 ***
 
@@ -674,7 +694,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:169](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L169)
+[packages/ai-tool-llm/src/llm-provider.ts:177](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L177)
 
 ***
 
@@ -692,7 +712,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:77](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L77)
+[packages/ai-tool-llm/src/llm-provider.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L82)
 
 ***
 
@@ -716,7 +736,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:134](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L134)
+[packages/ai-tool-llm/src/llm-provider.ts:142](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L142)
 
 ***
 
@@ -730,7 +750,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:108](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L108)
+[packages/ai-tool-llm/src/llm-provider.ts:116](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L116)
 
 ***
 
@@ -750,7 +770,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:211](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L211)
+[packages/ai-tool-llm/src/llm-provider.ts:219](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L219)
 
 ***
 
@@ -768,7 +788,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:89
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:89
 
 ***
 
@@ -786,7 +806,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:89
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:94
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:94
 
 ***
 
@@ -804,7 +824,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:94
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L120)
+[packages/ai-tool-llm/src/llm-provider.ts:128](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L128)
 
 ***
 
@@ -840,7 +860,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:95
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:95
 
 ***
 
@@ -862,7 +882,7 @@ A property name.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:140
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:140
 
 ***
 
@@ -904,7 +924,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:68](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L68)
+[packages/ai-tool-llm/src/llm-provider.ts:73](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L73)
 
 ***
 
@@ -926,7 +946,7 @@ Another object whose prototype chain is to be checked.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:146
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:146
 
 ***
 
@@ -968,7 +988,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:73](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L73)
+[packages/ai-tool-llm/src/llm-provider.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L78)
 
 ***
 
@@ -982,7 +1002,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L20)
+[packages/ai-tool-llm/src/llm-provider.ts:25](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L25)
 
 ***
 
@@ -1004,7 +1024,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:93](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L93)
+[packages/ai-tool-llm/src/llm-provider.ts:101](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L101)
 
 ***
 
@@ -1048,7 +1068,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:84
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:84
 
 ***
 
@@ -1070,7 +1090,7 @@ A property name.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:152
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:152
 
 ***
 
@@ -1084,7 +1104,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:1
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:81
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:81
 
 ***
 
@@ -1102,7 +1122,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:81
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:86
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:86
 
 ***
 
@@ -1122,7 +1142,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:86
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:87
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:87
 
 ***
 
@@ -1142,7 +1162,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:87
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:88
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:88
 
 ***
 
@@ -1160,7 +1180,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:88
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:85
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:85
 
 ***
 
@@ -1178,7 +1198,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:85
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:92
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:92
 
 ***
 
@@ -1198,7 +1218,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:92
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:93
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:93
 
 ***
 
@@ -1218,7 +1238,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:93
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:91
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:91
 
 ***
 
@@ -1236,7 +1256,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:91
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:90
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:90
 
 ***
 
@@ -1254,7 +1274,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:90
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:112](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L112)
+[packages/ai-tool-llm/src/llm-provider.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L120)
 
 ***
 
@@ -1272,6 +1292,26 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 ***
 
+### tokenize()
+
+> **tokenize**(`text`, `options`): `Promise`\<`number`[]\>
+
+#### Parameters
+
+• **text**: `string` \| `AIChatMessageParam`[]
+
+• **options**: [`AITokenizeOptions`](../interfaces/AITokenizeOptions.md) = `{}`
+
+#### Returns
+
+`Promise`\<`number`[]\>
+
+#### Defined in
+
+[packages/ai-tool-llm/src/llm-provider.ts:223](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L223)
+
+***
+
 ### toLocaleString()
 
 > **toLocaleString**(): `string`
@@ -1284,7 +1324,7 @@ Returns a date converted to a string using the current locale.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:131
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:131
 
 ***
 
@@ -1322,7 +1362,7 @@ Returns a string representation of an object.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:128
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:128
 
 ***
 
@@ -1336,7 +1376,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:1
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:82
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:82
 
 ***
 
@@ -1356,7 +1396,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:82
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L21)
+[packages/ai-tool-llm/src/llm-provider.ts:26](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L26)
 
 ***
 
@@ -1372,7 +1412,7 @@ Returns the primitive value of the specified object.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:134
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:134
 
 ***
 
@@ -1407,7 +1447,7 @@ The source object from which to copy properties.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:286
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:286
 
 #### assign(target, source1, source2)
 
@@ -1444,7 +1484,7 @@ The second source object from which to copy properties.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:295
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:295
 
 #### assign(target, source1, source2, source3)
 
@@ -1487,7 +1527,7 @@ The third source object from which to copy properties.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:305
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:305
 
 #### assign(target, sources)
 
@@ -1512,7 +1552,7 @@ One or more source objects from which to copy properties
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:313
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:313
 
 ***
 
@@ -1536,7 +1576,7 @@ Object to use as a prototype. May be null.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:188
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:188
 
 #### create(o, properties)
 
@@ -1560,7 +1600,7 @@ JavaScript object that contains one or more property descriptors.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:195
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:195
 
 ***
 
@@ -1618,7 +1658,7 @@ Descriptor for the property. It can be for a data property or an accessor proper
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:203
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:203
 
 ***
 
@@ -1646,7 +1686,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2017.object.d.ts:36
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2017.object.d.ts:36
 
 #### entries(o)
 
@@ -1666,7 +1706,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2017.object.d.ts:42
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2017.object.d.ts:42
 
 ***
 
@@ -1694,7 +1734,7 @@ Object on which to lock the attributes.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:222
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:222
 
 #### freeze(o)
 
@@ -1720,7 +1760,7 @@ Object on which to lock the attributes.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:228
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:228
 
 #### freeze(o)
 
@@ -1744,7 +1784,7 @@ Object on which to lock the attributes.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:234
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:234
 
 ***
 
@@ -1772,7 +1812,7 @@ An iterable object that contains key-value entries for properties and methods.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2019.object.d.ts:26
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2019.object.d.ts:26
 
 #### fromEntries(entries)
 
@@ -1792,7 +1832,7 @@ An iterable object that contains key-value entries for properties and methods.
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2019.object.d.ts:32
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2019.object.d.ts:32
 
 ***
 
@@ -1810,7 +1850,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2019.obj
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:65
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:65
 
 ***
 
@@ -1828,7 +1868,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:65
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:68
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:68
 
 ***
 
@@ -1846,7 +1886,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:68
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:44](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L44)
+[packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L49)
 
 ***
 
@@ -1864,7 +1904,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:68
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:67
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:67
 
 ***
 
@@ -1878,7 +1918,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:67
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:62](https://github.com/isdk/ai-tool-llm.js/blob/6d637e2cbb195f8d75ce36ff2cada54b2888e8ae/src/llm-provider.ts#L62)
+[packages/ai-tool-llm/src/llm-provider.ts:67](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L67)
 
 ***
 
@@ -1896,7 +1936,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:67
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:72
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:72
 
 ***
 
@@ -1914,7 +1954,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:72
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:75
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:75
 
 ***
 
@@ -1941,7 +1981,7 @@ Name of the property.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:175
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:175
 
 ***
 
@@ -1967,7 +2007,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2017.object.d.ts:48
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2017.object.d.ts:48
 
 ***
 
@@ -1990,7 +2030,7 @@ Object that contains the own properties.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:182
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:182
 
 ***
 
@@ -2012,7 +2052,7 @@ Object to retrieve the symbols from.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:319
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:319
 
 ***
 
@@ -2050,7 +2090,7 @@ The object that references the prototype.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:167
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:167
 
 ***
 
@@ -2068,7 +2108,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:1
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:69
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:69
 
 ***
 
@@ -2094,7 +2134,7 @@ The second value.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:332
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:332
 
 ***
 
@@ -2116,7 +2156,7 @@ Object to test.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:258
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:258
 
 ***
 
@@ -2138,7 +2178,7 @@ Object to test.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:252
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:252
 
 ***
 
@@ -2160,7 +2200,7 @@ Object to test.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:246
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:246
 
 ***
 
@@ -2184,7 +2224,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:264
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:264
 
 #### keys(o)
 
@@ -2204,7 +2244,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:325
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:325
 
 ***
 
@@ -2218,7 +2258,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.cor
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:66
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:66
 
 ***
 
@@ -2244,7 +2284,7 @@ Object to make non-extensible.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:240
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:240
 
 ***
 
@@ -2266,7 +2306,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:2
 
 ##### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:76
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:76
 
 #### register(func, options)
 
@@ -2284,7 +2324,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:76
 
 ##### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:77
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:77
 
 #### register(name, options)
 
@@ -2302,7 +2342,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:77
 
 ##### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:78
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:78
 
 ***
 
@@ -2322,7 +2362,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:78
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:70
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:70
 
 ***
 
@@ -2342,7 +2382,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:70
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:71
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:71
 
 ***
 
@@ -2362,7 +2402,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:71
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:73
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:73
 
 ***
 
@@ -2382,7 +2422,7 @@ packages/ai-tool/dist/index-DUEs7T8M.d.ts:73
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:74
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:74
 
 ***
 
@@ -2408,7 +2448,7 @@ Object on which to lock the attributes.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es5.d.ts:216
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es5.d.ts:216
 
 ***
 
@@ -2434,7 +2474,7 @@ The value of the new prototype or null.
 
 #### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.core.d.ts:339
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.core.d.ts:339
 
 ***
 
@@ -2452,7 +2492,7 @@ node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2015.cor
 
 #### Defined in
 
-packages/ai-tool/dist/index-DUEs7T8M.d.ts:79
+packages/ai-tool/dist/index-BC3GQn6-.d.ts:79
 
 ***
 
@@ -2480,7 +2520,7 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2017.object.d.ts:24
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2017.object.d.ts:24
 
 #### values(o)
 
@@ -2500,4 +2540,4 @@ Object that contains the properties and methods. This can be an object that you 
 
 ##### Defined in
 
-node\_modules/.pnpm/typescript@5.6.2/node\_modules/typescript/lib/lib.es2017.object.d.ts:30
+node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2017.object.d.ts:30

@@ -9,6 +9,7 @@
 ## Extended by
 
 - [`AITextGenerationOptions`](AITextGenerationOptions.md)
+- [`AITokenizeOptions`](AITokenizeOptions.md)
 
 ## Indexable
 

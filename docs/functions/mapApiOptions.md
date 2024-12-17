@@ -42,4 +42,4 @@ const mappedOpts = mapApiOptions(originalOpts, mapping);
 
 ## Defined in
 
-[packages/ai-tool-llm/src/llm-options.ts:115](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-options.ts#L115)
+[packages/ai-tool-llm/src/llm-options.ts:115](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-options.ts#L115)

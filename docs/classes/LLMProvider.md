@@ -56,7 +56,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ad
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L23)
+[packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L23)
 
 ***
 
@@ -70,7 +70,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ad
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L24)
+[packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L24)
 
 ***
 
@@ -116,7 +116,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L47)
+[packages/ai-tool-llm/src/llm-provider.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L47)
 
 ***
 
@@ -126,7 +126,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L40)
+[packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L40)
 
 ***
 
@@ -146,7 +146,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:42
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:29](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L29)
+[packages/ai-tool-llm/src/llm-provider.ts:29](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L29)
 
 ***
 
@@ -226,7 +226,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L41)
+[packages/ai-tool-llm/src/llm-provider.ts:41](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L41)
 
 ***
 
@@ -240,7 +240,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L21)
+[packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L21)
 
 ***
 
@@ -250,7 +250,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:46](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L46)
+[packages/ai-tool-llm/src/llm-provider.ts:46](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L46)
 
 ***
 
@@ -264,7 +264,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L20)
+[packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L20)
 
 ***
 
@@ -318,7 +318,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:43
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L22)
+[packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L22)
 
 ***
 
@@ -338,7 +338,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:40
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:36](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L36)
+[packages/ai-tool-llm/src/llm-provider.ts:36](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L36)
 
 ***
 
@@ -362,7 +362,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:64
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L38)
+[packages/ai-tool-llm/src/llm-provider.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L38)
 
 ## Methods
 
@@ -382,7 +382,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:64
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L27)
+[packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L27)
 
 ***
 
@@ -596,7 +596,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:233](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L233)
+[packages/ai-tool-llm/src/llm-provider.ts:233](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L233)
 
 ***
 
@@ -636,7 +636,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L28)
+[packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L28)
 
 ***
 
@@ -694,7 +694,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:177](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L177)
+[packages/ai-tool-llm/src/llm-provider.ts:177](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L177)
 
 ***
 
@@ -712,7 +712,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L82)
+[packages/ai-tool-llm/src/llm-provider.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L82)
 
 ***
 
@@ -736,7 +736,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:142](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L142)
+[packages/ai-tool-llm/src/llm-provider.ts:142](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L142)
 
 ***
 
@@ -750,7 +750,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:116](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L116)
+[packages/ai-tool-llm/src/llm-provider.ts:116](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L116)
 
 ***
 
@@ -770,7 +770,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:219](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L219)
+[packages/ai-tool-llm/src/llm-provider.ts:219](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L219)
 
 ***
 
@@ -824,7 +824,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:94
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:128](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L128)
+[packages/ai-tool-llm/src/llm-provider.ts:128](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L128)
 
 ***
 
@@ -924,7 +924,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:73](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L73)
+[packages/ai-tool-llm/src/llm-provider.ts:73](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L73)
 
 ***
 
@@ -988,7 +988,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L78)
+[packages/ai-tool-llm/src/llm-provider.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L78)
 
 ***
 
@@ -1002,7 +1002,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:25](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L25)
+[packages/ai-tool-llm/src/llm-provider.ts:25](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L25)
 
 ***
 
@@ -1024,7 +1024,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:101](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L101)
+[packages/ai-tool-llm/src/llm-provider.ts:101](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L101)
 
 ***
 
@@ -1274,7 +1274,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:90
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L120)
+[packages/ai-tool-llm/src/llm-provider.ts:120](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L120)
 
 ***
 
@@ -1308,7 +1308,7 @@ node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-manager/lib/ab
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:223](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L223)
+[packages/ai-tool-llm/src/llm-provider.ts:223](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L223)
 
 ***
 
@@ -1396,7 +1396,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:82
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:26](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L26)
+[packages/ai-tool-llm/src/llm-provider.ts:26](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L26)
 
 ***
 
@@ -1886,7 +1886,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:68
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L49)
+[packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L49)
 
 ***
 
@@ -1918,7 +1918,7 @@ packages/ai-tool/dist/index-BC3GQn6-.d.ts:67
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-provider.ts:67](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-provider.ts#L67)
+[packages/ai-tool-llm/src/llm-provider.ts:67](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-provider.ts#L67)
 
 ***
 

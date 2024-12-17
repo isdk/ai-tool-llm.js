@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L86)
+[packages/ai-tool-llm/src/llm-settings.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L86)
 
 ***
 
@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L89)
+[packages/ai-tool-llm/src/llm-settings.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L89)
 
 ***
 
@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L90)
+[packages/ai-tool-llm/src/llm-settings.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L90)
 
 ***
 
@@ -50,7 +50,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L76)
+[packages/ai-tool-llm/src/llm-settings.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L76)
 
 ***
 
@@ -60,7 +60,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L81)
+[packages/ai-tool-llm/src/llm-settings.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L81)
 
 ***
 
@@ -70,7 +70,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:88](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L88)
+[packages/ai-tool-llm/src/llm-settings.ts:88](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L88)
 
 ***
 
@@ -80,7 +80,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L85)
+[packages/ai-tool-llm/src/llm-settings.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L85)
 
 ***
 
@@ -90,7 +90,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L83)
+[packages/ai-tool-llm/src/llm-settings.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L83)
 
 ***
 
@@ -100,7 +100,7 @@ the model unique name, include extension name
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L82)
+[packages/ai-tool-llm/src/llm-settings.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L82)
 
 ***
 
@@ -112,7 +112,7 @@ the quanted model size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L80)
+[packages/ai-tool-llm/src/llm-settings.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L80)
 
 ***
 
@@ -122,4 +122,4 @@ the quanted model size in bytes
 
 #### Defined in
 
-[packages/ai-tool-llm/src/llm-settings.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/6dca0b043de83937d92e2b5f936238ef46f7ef86/src/llm-settings.ts#L87)
+[packages/ai-tool-llm/src/llm-settings.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/91036fde2392dfc52f5b7e20305699862b61dc63/src/llm-settings.ts#L87)

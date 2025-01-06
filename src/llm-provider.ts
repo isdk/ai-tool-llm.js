@@ -231,7 +231,8 @@ export class LLMProvider extends ToolFunc {
   }
 
   async countTokens(text: string|AIChatMessageParam[], options?: AITokenizeOptions) {
-    return this.tokenize(text, options)
+    const tokens = await this.tokenize(text, options)
+    return tokens?.length
   }
 }
 

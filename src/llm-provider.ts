@@ -189,7 +189,9 @@ export class LLMProvider extends ToolFunc {
     if (!modelInfo || typeof modelInfo === 'string') {
       modelInfo = await this.getModelInfo(modelInfo)
     }
-    const add_generation_prompt = options.add_generation_prompt ?? true
+    const lastMsg = messages[messages.length - 1]
+    const add_generation_prompt = lastMsg?.role === 'assistant' ? false : options.add_generation_prompt ?? true
+
     const data: PromptTemplateData = {bos_token: '', ...options, messages, add_generation_prompt}
     if (modelInfo) {
       if (modelInfo.bos_token) {data.bos_token = modelInfo.bos_token}

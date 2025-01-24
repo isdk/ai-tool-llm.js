@@ -78,6 +78,32 @@ describe('LLMProvider', ()=>{
     `)
   })
 
+  it('formatPrompt without add_generation_prompt', async ()=>{
+    const messages = [
+      {role: 'user', content: '1+2='},
+      {role: 'assistant', content: '3'},
+      {role: 'user', content: '2+3='},
+      {role: 'assistant', content: '5 for'},
+    ] as AIChatMessageParam[]
+    const options = {} as any
+    const result = await testLLMProvider.formatPrompt(messages, 'phi-3.test', options)
+    expect(options).toHaveProperty('chatTemplate')
+    expect(options.chatTemplate).toHaveProperty('prompt')
+    expect(options.chatTemplate.prompt).toHaveProperty('_id', 'Phi-3')
+    expect(result).toMatchInlineSnapshot(`
+      "<|user|>
+      You are a helpful AI assistant.<|end|>
+      <|user|>
+      1+2=<|end|>
+      <|assistant|>
+      3<|end|>
+      <|user|>
+      2+3=<|end|>
+      <|assistant|>
+      5 for"
+    `)
+  })
+
   it('should countTokens', async ()=>{
     const result = await testLLMProvider.countTokens('phi-3.test hi')
     expect(result).toBeGreaterThanOrEqual(5)

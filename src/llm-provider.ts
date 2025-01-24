@@ -12,6 +12,8 @@ import {
   type AIModelNameRules,
   matchUrlProtocol,
   paramsSizeToScaleStr,
+  CommonError,
+  ErrorCode,
 } from '@isdk/ai-tool'
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
 import { AIOptions, LLMArguments } from './llm-options'
@@ -183,9 +185,11 @@ export class LLMProvider extends ToolFunc {
       chatTemplate?: AIPromptResult,
       type?: AIPromptType,
       prompt?: any,
+      SystemTemplate?: AIPromptResult,
     } = {}
   ) {
-    let chatTemplate: string|AIPromptResult|undefined = options.chatTemplate
+    let chatTemplate: string|AIPromptResult|undefined = options.chatTemplate || options.SystemTemplate
+
     if (!modelInfo || typeof modelInfo === 'string') {
       modelInfo = await this.getModelInfo(modelInfo)
     }
@@ -198,8 +202,8 @@ export class LLMProvider extends ToolFunc {
       if (modelInfo.eos_token) {data.eos_token = modelInfo.eos_token}
       if (modelInfo.eot_token) {data.eot_token = modelInfo.eot_token}
     }
-    if (!chatTemplate) {
-      chatTemplate = await this.getChatTemplate(modelInfo, options)
+    if (!chatTemplate || typeof chatTemplate === 'string') {
+      chatTemplate = await this.getChatTemplate(chatTemplate || modelInfo, options)
       if (chatTemplate?.version) {
         let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
         if (Array.isArray(version)) {
@@ -210,6 +214,24 @@ export class LLMProvider extends ToolFunc {
         if (version) {
           data.version = version
         }
+      }
+    } else if (!chatTemplate.prompt) {
+      const id = chatTemplate.id
+      let version = chatTemplate.version
+      if (!id) {
+        throw new CommonError('SystemTemplate missing id', 'LLMProvider.formatPrompt', ErrorCode.InvalidArgument)
+      }
+      const promptsTool = ToolFunc.get(AIPromptsName)
+      chatTemplate = await promptsTool.get(id) as AIPromptResult
+      if (!chatTemplate) {
+        throw new NotFoundError(id, 'LLMProvider.formatPrompt')
+      }
+      if (!version) {version = chatTemplate.version}
+      if (Array.isArray(version)) {
+        version = version[0]
+      }
+      if (version) {
+        data.version = version
       }
     }
     if (chatTemplate) {

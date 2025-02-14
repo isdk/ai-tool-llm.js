@@ -15,7 +15,7 @@ import {
   CommonError,
   ErrorCode,
 } from '@isdk/ai-tool'
-import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters } from '@isdk/ai-tool-prompt'
+import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters, getVersionPromptSettings } from '@isdk/ai-tool-prompt'
 import { AIOptions, LLMArguments } from './llm-options'
 import { AIModelParams, AIProviderSettings, LLMProviderSchema } from './llm-settings'
 
@@ -235,6 +235,10 @@ export class LLMProvider extends ToolFunc {
       }
     }
     if (chatTemplate) {
+      if (data.version) {
+        chatTemplate.prompt = getVersionPromptSettings(data.version, chatTemplate.prompt)
+        delete data.version
+      }
       options.chatTemplate = chatTemplate
       return await formatPrompt(data, chatTemplate.prompt)
     }

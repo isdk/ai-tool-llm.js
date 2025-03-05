@@ -176,7 +176,7 @@ export class LLMProvider extends ToolFunc {
 
     }
     const requiredDefault = options.defaultTemplate ?? true
-    if (!chatTemplate && requiredDefault) {
+    if (!chatTemplate && requiredDefault && promptsTool) {
       chatTemplate = await promptsTool.getDefaultPrompt() as AIPromptResult
     }
 

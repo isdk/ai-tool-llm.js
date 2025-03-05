@@ -159,14 +159,21 @@ export class LLMProvider extends ToolFunc {
         }
       }
     }
-    if ((!chatTemplate || chatTemplate.prompt.priority! < 0) && modelInfo?.chat_template) {
-      chatTemplate = {
-        prompt: {
-          template: modelInfo.chat_template,
-          type: 'system',
-          templateFormat: 'hf',
-        }
-      } as AIPromptResult
+    if ((!chatTemplate || !chatTemplate.prompt.template || chatTemplate.prompt.priority! < 0) && modelInfo?.chat_template) {
+      if (!chatTemplate) {
+        chatTemplate = {
+          prompt: {
+            template: modelInfo.chat_template,
+            type: 'system',
+            templateFormat: 'hf',
+          }
+        } as AIPromptResult
+      } else {
+        chatTemplate.prompt.template = modelInfo.chat_template
+        chatTemplate.prompt.priority = -1
+        chatTemplate.prompt.templateFormat = 'hf'
+      }
+
     }
     const requiredDefault = options.defaultTemplate ?? true
     if (!chatTemplate && requiredDefault) {

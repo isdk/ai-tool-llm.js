@@ -112,7 +112,7 @@ export type AITextGenerationResult = AIResult<string>
  * const mappedOpts = mapApiOptions(originalOpts, mapping);
  * // mappedOpts is now { userName: 'Alice', isActive: true }
  */
-export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?: Record<string, string>) {
+export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?: Record<string, string|string[]>) {
   let result: any = omit(opts as any, Object.keys(AIOptionsMap || {}))
   if (opts) {
     if (AIOptionsMap) {
@@ -120,7 +120,13 @@ export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?
         const destName = AIOptionsMap[srcName]
         const v = getByPath(opts, srcName)
         if (v != null) {
-          result = setByPath(result, destName, v)
+          if (Array.isArray(destName)) {
+            for (const name of destName) {
+              result = setByPath(result, name, v)
+            }
+          } else {
+            result = setByPath(result, destName, v)
+          }
         }
       }
     }
@@ -129,8 +135,22 @@ export function mapApiOptions<TAIOptions = any>(opts?: TAIOptions, AIOptionsMap?
 }
 
 // used to reverse AIOptionsMap
-export const flip = (data: Record<string, string>) => Object.fromEntries(
-  Object
-    .entries(data)
-    .map(([key, value]) => [value, key])
-  );
+export const flip = (data: Record<string, string>, ignoreKeys?: string[]) => {
+  const result: Record<string, string | string[]> = {};
+
+  for (const [key, value] of Object.entries(data)) {
+    if (ignoreKeys?.includes(key)) {
+      continue;
+    }
+    const v = result[value];
+    if (!v) {
+      result[value] = key;
+    } else if (typeof v === 'string') {
+      result[value] = [v, key];
+    } else if (!v.includes(key)) {
+      (v as string[]).push(key);
+    }
+  }
+
+  return result;
+};

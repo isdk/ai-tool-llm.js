@@ -127,10 +127,10 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getModelInfo(modelName?: string): Promise<AIModelParams|undefined> {
+  async getModelInfo(modelName?: string, options?: any): Promise<AIModelParams|undefined> {
     const provider = LLMProvider.getByModel(modelName)
     if (provider) {
-      const result = await provider.getModelInfo(modelName)
+      const result = await provider.getModelInfo(modelName, options)
       if (result) {
         result['provider'] = provider.name
         if (result.params_size && !result.scale) {

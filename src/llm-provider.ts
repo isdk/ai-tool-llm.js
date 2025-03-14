@@ -82,15 +82,14 @@ export class LLMProvider extends ToolFunc {
   }
 
   async func(input: LLMArguments): Promise<AIResult> {
-    const model = input.model ?? input.options?.model ?? this.model
+    let model = input.model ?? input.options?.model
     const providerName = input.provider ?? input.options?.provider
     const provider = providerName ? LLMProvider.get(providerName) as LLMProvider ?? LLMProvider.getByModel(model) : LLMProvider.getByModel(model)
     if (provider) {
+      if (!model) {model = provider.model}
       if (model) {
         const protocol = matchUrlProtocol(model)
-        if (protocol) {
-          input.model = model.replace(protocol+'://', '')
-        }
+        input.model = protocol ? model.replace(protocol+'://', '') : model
       }
       if (input.onlyTokenizer) {
         return provider.tokenize(input.value, input)

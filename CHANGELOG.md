@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.3](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.2...v0.1.3) (2025-03-16)
+
+
+### Features
+
+* add options to getModelInfo ([64689a4](https://github.com/isdk/ai-tool-llm.js/commit/64689a413b608c3d70c66ccc8c6278682e89f99f))
+* add SystemTemplate option to formatPrompt ([3b16ded](https://github.com/isdk/ai-tool-llm.js/commit/3b16dedc7e3c5266a4c9572a29eebab1a36f1987))
+* **flip:** add the same value supports and optional ignoreKeys argument ([ed1e8b7](https://github.com/isdk/ai-tool-llm.js/commit/ed1e8b7ba56221b9d684d289ead370ab51e837f0))
+
+
+### Bug Fixes
+
+* apply provider.model correctly ([0ede7b9](https://github.com/isdk/ai-tool-llm.js/commit/0ede7b9a883d9aef4fdb52966d83de38942433fb))
+* countTokens not work ([c9cf6fb](https://github.com/isdk/ai-tool-llm.js/commit/c9cf6fb1acda0b73e0584cacda346af88294b097))
+* make sure there are no extra assistant added ([08f18f6](https://github.com/isdk/ai-tool-llm.js/commit/08f18f6c75e8fb573d1c820b672b622e5dfd49b5))
+* should check promptsTool first ([aefa1b0](https://github.com/isdk/ai-tool-llm.js/commit/aefa1b08083124d60dde861783cdf34247b14f09))
+* should merge version prompt ([f6dd4b0](https://github.com/isdk/ai-tool-llm.js/commit/f6dd4b000b43edccad1b93501c9cc9568100dcfa))
+* should try input.options too ([8e21dea](https://github.com/isdk/ai-tool-llm.js/commit/8e21dead08bd7185d28ec5bbee3b498c7e62cf3b))
+* should use model system template if no template found ([d963d51](https://github.com/isdk/ai-tool-llm.js/commit/d963d51bd673de887dc524d901fa157abad6bc37))
+* this.model should be default value too ([c47053e](https://github.com/isdk/ai-tool-llm.js/commit/c47053eed53fbe2bd9b20cfff131430ba11cd795))
+
 ## [0.1.2](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.1...v0.1.2) (2024-12-18)
 
 ## [0.1.1](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.0...v0.1.1) (2024-12-17)

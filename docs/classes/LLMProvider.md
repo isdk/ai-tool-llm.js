@@ -6,7 +6,7 @@
 
 # Class: LLMProvider
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:26](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L26)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:26](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L26)
 
 ## Extends
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-ma
 
 > `optional` **apiKey**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L23)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L23)
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isd
 
 > `optional` **apiUrl**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L24)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L24)
 
 #### Inherited from
 
@@ -108,7 +108,7 @@ The default options for export and assign
 
 > **depends**: `object`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L49)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L49)
 
 #### Index Signature
 
@@ -120,7 +120,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:49](https://github.com/isd
 
 > **description**: `string` = `'run LLM model'`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:42](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L42)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:42](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L42)
 
 ***
 
@@ -136,7 +136,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:31
 
 > `optional` **model**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L31)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:31](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L31)
 
 ***
 
@@ -162,7 +162,7 @@ the property with the default prefix '$' will not be exported.
 
 > **params**: `object`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:43](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L43)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:43](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L43)
 
 #### model
 
@@ -218,7 +218,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:43](https://github.com/isd
 
 > **prior**: `number`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L21)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L21)
 
 #### Inherited from
 
@@ -230,7 +230,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isd
 
 > **result**: `string` = `'object'`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:48](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L48)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:48](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L48)
 
 ***
 
@@ -238,7 +238,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:48](https://github.com/isd
 
 > **rule**: `AIModelNameRules`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L20)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L20)
 
 #### Inherited from
 
@@ -288,7 +288,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:32
 
 > **supports**: [`AIModelType`](../enumerations/AIModelType.md) \| [`AIModelType`](../enumerations/AIModelType.md)[]
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L22)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L22)
 
 #### Inherited from
 
@@ -308,7 +308,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:29
 
 > `static` `optional` **current**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L38)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:38](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L38)
 
 ***
 
@@ -324,7 +324,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:53
 
 > `static` **items**: `object` = `LLMProviders`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L40)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L40)
 
 #### Index Signature
 
@@ -336,7 +336,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:40](https://github.com/isd
 
 > `optional` **addModel**(`modelName`, `model`): `Promise`\<`any`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:29](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L29)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:29](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L29)
 
 #### Parameters
 
@@ -576,7 +576,7 @@ the new dest object
 
 > **countTokens**(`text`, `options`?): `Promise`\<`number`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:268](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L268)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:268](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L268)
 
 #### Parameters
 
@@ -620,7 +620,7 @@ the defined attributes of the object
 
 > `optional` **deleteModel**(`modelName`): `Promise`\<`any`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L30)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:30](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L30)
 
 #### Parameters
 
@@ -666,7 +666,7 @@ the dest object.
 
 > **formatPrompt**(`messages`, `modelInfo`?, `options`?): `Promise`\<`undefined` \| `string`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:186](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L186)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:186](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L186)
 
 #### Parameters
 
@@ -714,7 +714,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:186](https://github.com/is
 
 > **func**(`input`): `Promise`\<`AIResult`\<`any`, `any`\>\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L84)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L84)
 
 #### Parameters
 
@@ -732,7 +732,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:84](https://github.com/isd
 
 > **getChatTemplate**(`modelInfo`?, `options`?): `Promise`\<`undefined` \| `AIPromptResult`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:144](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L144)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:144](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L144)
 
 #### Parameters
 
@@ -760,7 +760,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:144](https://github.com/is
 
 > **getCurrentProvider**(): `undefined` \| [`LLMProvider`](LLMProvider.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:118](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L118)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:118](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L118)
 
 #### Returns
 
@@ -772,7 +772,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:118](https://github.com/is
 
 > **getDefaultParameters**(`chatTemplate`, `model`): `any`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:254](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L254)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:254](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L254)
 
 #### Parameters
 
@@ -830,7 +830,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:83
 
 > **getModelInfo**(`modelName`?, `options`?): `Promise`\<`undefined` \| [`AIModelParams`](../type-aliases/AIModelParams.md)\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:130](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L130)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:130](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L130)
 
 #### Parameters
 
@@ -930,7 +930,7 @@ this object.
 
 > **isModelNameMatched**(`modelName`, `rule`?): `undefined` \| `string` \| `RegExpExecArray`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:75](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L75)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:75](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L75)
 
 #### Parameters
 
@@ -1000,7 +1000,7 @@ The source object
 
 > **isStream**(`params`): `any`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L80)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L80)
 
 #### Parameters
 
@@ -1018,7 +1018,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:80](https://github.com/isd
 
 > `optional` **listModels**(): `Promise`\<`undefined` \| `string`[]\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L27)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L27)
 
 #### Returns
 
@@ -1030,7 +1030,7 @@ Defined in: [packages/ai-tool-llm/src/llm-provider.ts:27](https://github.com/isd
 
 > **listProviders**(`options`?): `object`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:103](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L103)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:103](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L103)
 
 #### Parameters
 
@@ -1294,7 +1294,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:79
 
 > **setCurrentProvider**(`name`): `void`
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:122](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L122)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:122](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L122)
 
 #### Parameters
 
@@ -1324,7 +1324,7 @@ Defined in: node\_modules/.pnpm/property-manager@2.0.0/node\_modules/property-ma
 
 > **tokenize**(`text`, `options`): `Promise`\<`number`[]\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:258](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L258)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:258](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L258)
 
 #### Parameters
 
@@ -1408,7 +1408,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:71
 
 > `optional` **updateModel**(`modelName`, `model`): `Promise`\<`any`\>
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L28)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:28](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L28)
 
 #### Parameters
 
@@ -1922,7 +1922,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:57
 
 > `static` **getByModel**(`modelName`?): `undefined` \| [`LLMProvider`](LLMProvider.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:51](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L51)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:51](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L51)
 
 #### Parameters
 
@@ -1958,7 +1958,7 @@ Defined in: packages/ai-tool/dist/index-Br-4ZYgE.d.ts:56
 
 > `static` **getCurrentProvider**(): `undefined` \| [`LLMProvider`](LLMProvider.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:69](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-provider.ts#L69)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:69](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-provider.ts#L69)
 
 #### Returns
 

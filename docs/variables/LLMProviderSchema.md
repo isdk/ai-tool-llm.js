@@ -8,7 +8,7 @@
 
 > `const` **LLMProviderSchema**: `object`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:155](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L155)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:155](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L155)
 
 ## Type declaration
 

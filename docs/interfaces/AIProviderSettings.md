@@ -6,7 +6,7 @@
 
 # Interface: AIProviderSettings
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:19](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L19)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:19](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L19)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:19](https://github.com/isd
 
 > `optional` **apiKey**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L23)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L23)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:23](https://github.com/isd
 
 > `optional` **apiUrl**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L24)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L24)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:24](https://github.com/isd
 
 > **prior**: `number`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L21)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L21)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:21](https://github.com/isd
 
 > **rule**: `AIModelNameRules`
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L20)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L20)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [packages/ai-tool-llm/src/llm-settings.ts:20](https://github.com/isd
 
 > **supports**: [`AIModelType`](../enumerations/AIModelType.md) \| [`AIModelType`](../enumerations/AIModelType.md)[]
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/1e1b7ab3f06396b8a60947ad8324e2fc8804a53b/src/llm-settings.ts#L22)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/8c69e55e8591c1426c7cfbb1299ce4e181171e4c/src/llm-settings.ts#L22)

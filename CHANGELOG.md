@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.8](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.7...v0.1.8) (2025-03-17)
+
+
+### Features
+
+* add getProvider method ([0105e08](https://github.com/isdk/ai-tool-llm.js/commit/0105e0806703dc594a3652a122c6373b3789706e))
+
 ## [0.1.7](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.6...v0.1.7) (2025-03-17)
 
 ## [0.1.6](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.5...v0.1.6) (2025-03-16)

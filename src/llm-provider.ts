@@ -132,8 +132,19 @@ export class LLMProvider extends ToolFunc {
   }
 
   async getModelInfo(modelName?: string, options?: any): Promise<AIModelParams|undefined> {
-    const provider = LLMProvider.getByModel(modelName)
+    let provider = LLMProvider.getByModel(modelName)
     if (provider) {
+      if (modelName) {
+        const protocol = matchUrlProtocol(modelName)
+        if (protocol) {
+          modelName = modelName.slice(protocol.length+3)
+        } else if (options.provider) {
+          const _provider = LLMProvider.get(options.provider) as LLMProvider
+          if (_provider) {
+            provider = _provider
+          }
+        }
+      }
       const result = await provider.getModelInfo(modelName, options)
       if (result) {
         result['provider'] = provider.name
@@ -145,10 +156,11 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getChatTemplate(modelInfo?: AIModelParams|string, options: {defaultTemplate?: boolean, type?: AIPromptType} = {}) {
+  async getChatTemplate(modelInfo?: AIModelParams|string, options: {defaultTemplate?: boolean, type?: AIPromptType, provider?: string} = {}) {
     let modelName: string|undefined = modelInfo as string
     if (!modelInfo || typeof modelInfo === 'string') {
-      modelInfo = await this.getModelInfo(modelInfo)
+      modelInfo = await this.getModelInfo(modelInfo, options)
+      if (modelInfo) { modelName = modelInfo.name }
     } else {
       modelName = modelInfo.name
     }

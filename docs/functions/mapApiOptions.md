@@ -8,7 +8,7 @@
 
 > **mapApiOptions**\<`TAIOptions`\>(`opts`?, `AIOptionsMap`?): `TAIOptions`
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:115](https://github.com/isdk/ai-tool-llm.js/blob/780a1d1c86b3c56efc274a930a7b482fc2c1a2a1/src/llm-options.ts#L115)
+Defined in: [packages/ai-tool-llm/src/llm-options.ts:115](https://github.com/isdk/ai-tool-llm.js/blob/cce15e28c39fd2fefb63f1a38e624e7483ff232f/src/llm-options.ts#L115)
 
 Maps properties from the provided options object to a new object according to the mappings defined in AIOptionsMap.
 Supports both simple property names and paths (e.g., 'foo.bar') for nested properties.

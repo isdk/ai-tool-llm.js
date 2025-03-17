@@ -115,6 +115,10 @@ export class LLMProvider extends ToolFunc {
     return result
   }
 
+  getProvider(name: string) {
+    return LLMProvider.get(name)
+  }
+
   getCurrentProvider() {
     return LLMProvider.getCurrentProvider()
   }

@@ -8,4 +8,4 @@
 
 > `const` **llm**: [`LLMProvider`](../classes/LLMProvider.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-provider.ts:290](https://github.com/isdk/ai-tool-llm.js/blob/cce15e28c39fd2fefb63f1a38e624e7483ff232f/src/llm-provider.ts#L290)
+Defined in: [packages/ai-tool-llm/src/llm-provider.ts:294](https://github.com/isdk/ai-tool-llm.js/blob/0105e0806703dc594a3652a122c6373b3789706e/src/llm-provider.ts#L294)

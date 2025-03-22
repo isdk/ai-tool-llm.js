@@ -8,4 +8,4 @@
 
 > **AIModelParams**: [`AIModelSimpleSettings`](../interfaces/AIModelSimpleSettings.md) & [`AIModelFileSettings`](../interfaces/AIModelFileSettings.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-settings.ts:143](https://github.com/isdk/ai-tool-llm.js/blob/0105e0806703dc594a3652a122c6373b3789706e/src/llm-settings.ts#L143)
+Defined in: [packages/ai-tool-llm/src/llm-settings.ts:143](https://github.com/isdk/ai-tool-llm.js/blob/f3c3cef59ff3aa0ce6d3161a8d3d8cd72ec50012/src/llm-settings.ts#L143)

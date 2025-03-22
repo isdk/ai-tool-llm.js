@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.8...v0.1.9) (2025-03-22)
+
+
+### Features
+
+* should get model info with provider and URI ([f3c3cef](https://github.com/isdk/ai-tool-llm.js/commit/f3c3cef59ff3aa0ce6d3161a8d3d8cd72ec50012))
+
 ## [0.1.8](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.7...v0.1.8) (2025-03-17)
 
 

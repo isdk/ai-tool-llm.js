@@ -144,6 +144,8 @@ export class LLMProvider extends ToolFunc {
             provider = _provider
           }
         }
+      } else {
+        modelName = provider.defaultModelName
       }
       const result = await provider.getModelInfo(modelName, options)
       if (result) {
@@ -156,7 +158,7 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
-  async getChatTemplate(modelInfo?: AIModelParams|string, options: {defaultTemplate?: boolean, type?: AIPromptType, provider?: string} = {}) {
+  async _getChatTemplate(modelInfo?: AIModelParams|string, options: {defaultTemplate?: boolean, type?: AIPromptType, provider?: string} = {}) {
     let modelName: string|undefined = modelInfo as string
     if (!modelInfo || typeof modelInfo === 'string') {
       modelInfo = await this.getModelInfo(modelInfo, options)
@@ -199,6 +201,56 @@ export class LLMProvider extends ToolFunc {
     return chatTemplate
   }
 
+  async getChatTemplate(chatTemplate?: string|AIPromptResult, options: {modelInfo?: AIModelParams|string, defaultTemplate?: boolean, type?: AIPromptType, provider?: string} = {}) {
+    let modelInfo = options.modelInfo
+    if (!modelInfo || typeof modelInfo === 'string') {
+      modelInfo = await this.getModelInfo(modelInfo)
+    }
+
+    if (!chatTemplate || typeof chatTemplate === 'string') {
+      chatTemplate = await this._getChatTemplate(chatTemplate || modelInfo, options)
+      if (chatTemplate?.version) {
+        let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
+        if (Array.isArray(version)) {
+          // const isDefault = version.indexOf('@')
+          // version = isDefault ? '@' : version[0]
+          version = version[0]
+        }
+        if (version) {
+          chatTemplate.version = version
+        } else {
+          delete chatTemplate.version
+        }
+      }
+    } else if (!chatTemplate.prompt) {
+      const id = chatTemplate.id
+      let version = chatTemplate.version
+      if (!id) {
+        throw new CommonError('SystemTemplate missing id', 'LLMProvider.formatPrompt', ErrorCode.InvalidArgument)
+      }
+      const promptsTool = ToolFunc.get(AIPromptsName)
+      chatTemplate = await promptsTool.get(id) as AIPromptResult
+      if (!chatTemplate) {
+        throw new NotFoundError(id, 'LLMProvider.formatPrompt')
+      }
+      if (!version) {version = chatTemplate.version}
+      if (Array.isArray(version)) {
+        version = version[0]
+      }
+      if (version) {
+        chatTemplate.version = version
+      } else {
+        delete chatTemplate.version
+      }
+    }
+
+    if (chatTemplate?.version) {
+      chatTemplate.prompt = getVersionPromptSettings(chatTemplate.version as string, chatTemplate.prompt)
+    }
+
+    return chatTemplate as AIPromptResult
+  }
+
   async formatPrompt(
     messages: AIChatMessageParam[],
     modelInfo?: AIModelParams|string,
@@ -225,45 +277,12 @@ export class LLMProvider extends ToolFunc {
       if (modelInfo.eos_token) {data.eos_token = modelInfo.eos_token}
       if (modelInfo.eot_token) {data.eot_token = modelInfo.eot_token}
     }
-    if (!chatTemplate || typeof chatTemplate === 'string') {
-      chatTemplate = await this.getChatTemplate(chatTemplate || modelInfo, options)
-      if (chatTemplate?.version) {
-        let version: string|AIPromptFitResult[]|undefined = chatTemplate.version
-        if (Array.isArray(version)) {
-          // const isDefault = version.indexOf('@')
-          // version = isDefault ? '@' : version[0]
-          version = version[0]
-        }
-        if (version) {
-          data.version = version
-        }
-      }
-    } else if (!chatTemplate.prompt) {
-      const id = chatTemplate.id
-      let version = chatTemplate.version
-      if (!id) {
-        throw new CommonError('SystemTemplate missing id', 'LLMProvider.formatPrompt', ErrorCode.InvalidArgument)
-      }
-      const promptsTool = ToolFunc.get(AIPromptsName)
-      chatTemplate = await promptsTool.get(id) as AIPromptResult
-      if (!chatTemplate) {
-        throw new NotFoundError(id, 'LLMProvider.formatPrompt')
-      }
-      if (!version) {version = chatTemplate.version}
-      if (Array.isArray(version)) {
-        version = version[0]
-      }
-      if (version) {
-        data.version = version
-      }
-    }
+    chatTemplate = await this.getChatTemplate(chatTemplate, {...options, modelInfo})
+
     if (chatTemplate) {
-      if (data.version) {
-        chatTemplate.prompt = getVersionPromptSettings(data.version, chatTemplate.prompt)
-        delete data.version
-      }
       options.chatTemplate = chatTemplate
-      return await formatPrompt(data, chatTemplate.prompt)
+
+      return await formatPrompt(data, chatTemplate)
     }
   }
 

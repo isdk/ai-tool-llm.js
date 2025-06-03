@@ -72,6 +72,16 @@ export class LLMProvider extends ToolFunc {
     }
   }
 
+  static unregister(name: string): ToolFunc|undefined {
+    const result = super.unregister(name)
+    if (result) {
+      if (LLMProvider.current === name)  {
+        LLMProvider.current = undefined
+      }
+    }
+    return result
+  }
+
   isModelNameMatched(modelName: string, rule?: AIModelNameRules) {
     if (!rule) {rule = this.rule}
     return isModelNameMatched.call(this, modelName, rule)

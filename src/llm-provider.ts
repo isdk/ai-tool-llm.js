@@ -71,6 +71,13 @@ export class LLMProvider extends ToolFunc {
       return LLMProvider.get(LLMProvider.current) as LLMProvider
     }
   }
+  static setCurrentProvider(name: string) {
+    if (LLMProvider.get(name)) {
+      LLMProvider.current = name
+    } else {
+      throw new NotFoundError(name, 'LLMProvider')
+    }
+  }
 
   static unregister(name: string): ToolFunc|undefined {
     const result = super.unregister(name)
@@ -134,11 +141,7 @@ export class LLMProvider extends ToolFunc {
   }
 
   setCurrentProvider(name: string) {
-    if (LLMProvider.get(name)) {
-      LLMProvider.current = name
-    } else {
-      throw new NotFoundError(name, 'LLMProvider')
-    }
+    LLMProvider.setCurrentProvider(name)
   }
 
   async getModelInfo(modelName?: string, options?: any): Promise<AIModelParams|undefined> {

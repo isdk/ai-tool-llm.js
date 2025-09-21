@@ -6,7 +6,7 @@
 
 # Interface: AIResponseFormat
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:12](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L12)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:12](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L12)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/ai-tool-llm/src/llm-options.ts:12](https://github.com/isdk
 
 > `optional` **description**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:16](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L16)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:16](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L16)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/ai-tool-llm/src/llm-options.ts:16](https://github.com/isdk
 
 > `optional` **name**: `string`
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:15](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L15)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:15](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L15)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/ai-tool-llm/src/llm-options.ts:15](https://github.com/isdk
 
 > `optional` **schema**: `any`
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L14)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:14](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L14)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/ai-tool-llm/src/llm-options.ts:14](https://github.com/isdk
 
 > **type**: [`AIResponseFormatType`](../type-aliases/AIResponseFormatType.md)
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L13)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:13](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L13)

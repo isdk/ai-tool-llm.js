@@ -6,9 +6,9 @@
 
 # Function: flip()
 
-> **flip**(`data`, `ignoreKeys`?): `Record`\<`string`, `string` \| `string`[]\>
+> **flip**(`data`, `ignoreKeys?`): `Record`\<`string`, `string` \| `string`[]\>
 
-Defined in: [packages/ai-tool-llm/src/llm-options.ts:138](https://github.com/isdk/ai-tool-llm.js/blob/4399c94b373491a78c574ff875391a36601e026c/src/llm-options.ts#L138)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:138](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L138)
 
 ## Parameters
 

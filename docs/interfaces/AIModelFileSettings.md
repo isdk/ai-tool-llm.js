@@ -6,7 +6,7 @@
 
 # Interface: AIModelFileSettings
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:72](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L72)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:72](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L72)
 
 ## Indexable
 
@@ -18,7 +18,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:72](https:/
 
 > `optional` **count**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L86)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L86)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:86](https:/
 
 > `optional` **downloaded**: `boolean`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L89)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:89](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L89)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:89](https:/
 
 > `optional` **downloading**: `FileDownloadStatus`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L90)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L90)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:90](https:/
 
 > `optional` **file\_name**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L76)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:76](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L76)
 
 the model unique name, include extension name
 
@@ -52,7 +52,7 @@ the model unique name, include extension name
 
 > `optional` **file\_size**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L81)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:81](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L81)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:81](https:/
 
 > `optional` **hf\_path**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:88](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L88)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:88](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L88)
 
 ***
 
@@ -68,7 +68,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:88](https:/
 
 > `optional` **index**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L85)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L85)
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:85](https:/
 
 > `optional` **location**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L83)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L83)
 
 ***
 
@@ -84,7 +84,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:83](https:/
 
 > `optional` **quant**: [`AIModelQuantType`](../enumerations/AIModelQuantType.md)
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L82)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L82)
 
 ***
 
@@ -92,7 +92,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:82](https:/
 
 > `optional` **size**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L80)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L80)
 
 the quanted model size in bytes
 
@@ -102,4 +102,4 @@ the quanted model size in bytes
 
 > `optional` **url**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-settings.ts#L87)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-settings.ts#L87)

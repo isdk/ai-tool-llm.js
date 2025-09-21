@@ -6,7 +6,7 @@
 
 # Interface: LLMArguments
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L90)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:90](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L90)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:90](https://
 
 > `optional` **model**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:91](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L91)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:91](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L91)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:91](https://
 
 > `optional` **onlyTokenizer**: `boolean`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:95](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L95)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:95](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L95)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:95](https://
 
 > `optional` **options**: [`AIOptions`](AIOptions.md)
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:93](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L93)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:93](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L93)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:93](https://
 
 > `optional` **provider**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:94](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L94)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:94](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L94)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:94](https://
 
 > `optional` **value**: `any`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/0117bca14260d3af76fa17e1e8bf1508a2762ab9/src/llm-options.ts#L92)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:92](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L92)

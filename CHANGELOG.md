@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.11](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.10...v0.1.11) (2025-09-21)
+
+
+### Features
+
+* add static setCurrentProvider ([7488c50](https://github.com/isdk/ai-tool-llm.js/commit/7488c503a6a15b9c02956c8e646fbd0cdff7f78c))
+
+
+### Bug Fixes
+
+* can not getModelInfo if no modelName ([845600d](https://github.com/isdk/ai-tool-llm.js/commit/845600d118f1da9dd02b081586565064f34c62cb))
+* unregister should remove LLMProvider.current if itself ([3689816](https://github.com/isdk/ai-tool-llm.js/commit/368981634274c9fc1877db0febc02711dbb89aed))
+
 ## [0.1.10](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.9...v0.1.10) (2025-04-04)
 
 ## [0.1.9](https://github.com/isdk/ai-tool-llm.js/compare/v0.1.8...v0.1.9) (2025-03-22)

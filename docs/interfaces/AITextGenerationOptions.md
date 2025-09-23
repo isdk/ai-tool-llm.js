@@ -6,7 +6,7 @@
 
 # Interface: AITextGenerationOptions
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:19](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L19)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:19](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L19)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:19](https://
 
 > `optional` **content\_size**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:39](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L39)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:39](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L39)
 
 Specify the context window size of the model that you have loaded.
 
@@ -32,7 +32,7 @@ Specify the context window size of the model that you have loaded.
 
 > `optional` **frequency\_penalty**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L83)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:83](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L83)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:83](https://
 
 > `optional` **gen\_count**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:70](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L70)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:70](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L70)
 
 Number of texts to generate.
 
@@ -59,7 +59,7 @@ Example: `gen_count: 3` // The model will produce 3 different responses.
 
 > `optional` **max\_tokens**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L33)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:33](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L33)
 
 Specifies the maximum number of tokens (words, punctuation, parts of words) that the model can generate in a single response.
 It helps to control the length of the output.
@@ -74,7 +74,7 @@ Example: `max_tokens: 1000`
 
 > `optional` **presence\_penalty**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L84)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:84](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L84)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:84](https://
 
 > `optional` **response\_format**: [`AIResponseFormat`](AIResponseFormat.md)
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L82)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:82](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L82)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:82](https://
 
 > `optional` **seed**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L85)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:85](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L85)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:85](https://
 
 > `optional` **stop**: `string` \| `string`[]
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L56)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:56](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L56)
 
 the alias of stop_words
 
@@ -108,7 +108,7 @@ the alias of stop_words
 
 > `optional` **stop\_words**: `string` \| `string`[]
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L52)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:52](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L52)
 
 Stop sequences to use.
 Stop sequences are an array of strings or a single string that the model will recognize as end-of-text indicators.
@@ -126,7 +126,7 @@ Example: `stop_words: ['\n', 'END']`
 
 > `optional` **stream**: `boolean`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L80)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:80](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L80)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:80](https://
 
 > `optional` **temperature**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L23)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L23)
 
 Adjust the randomness of the generated text.
 
@@ -144,7 +144,7 @@ Adjust the randomness of the generated text.
 
 > `optional` **top\_k**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L87)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:87](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L87)
 
 ***
 
@@ -152,7 +152,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:87](https://
 
 > `optional` **top\_p**: `number`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L86)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:86](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L86)
 
 ***
 
@@ -160,7 +160,7 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:86](https://
 
 > `optional` **trim**: `boolean`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-options.ts#L78)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:78](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L78)
 
 When true, the leading and trailing white space and line terminator characters
 are removed from the generated text.

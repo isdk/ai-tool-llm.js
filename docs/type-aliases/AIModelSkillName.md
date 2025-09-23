@@ -8,6 +8,6 @@
 
 > **AIModelSkillName** = [`AIModelPublicSkillName`](AIModelPublicSkillName.md) \| [`AIModelInternalSkillName`](AIModelInternalSkillName.md)
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-skills.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/b85f02c051e6cb4b9c451fe72592c4077cb731a4/src/llm-skills.ts#L47)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-skills.ts:47](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-skills.ts#L47)
 
 Combines both public and internal skills into a single namespace for convenience.

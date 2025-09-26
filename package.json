@@ -29,10 +29,10 @@
     "release.alpha": "pnpm run release -- --prerelease alpha"
   },
   "dependencies": {
-    "@isdk/ai-tool": "workspace:*",
-    "@isdk/ai-tool-downloader": "workspace:*",
-    "@isdk/ai-tool-prompt": "workspace:*",
-    "@isdk/ai-tool-sqlite": "workspace:*",
+    "@isdk/ai-tool": "workspace:^",
+    "@isdk/ai-tool-downloader": "workspace:^",
+    "@isdk/ai-tool-prompt": "workspace:^",
+    "@isdk/ai-tool-sqlite": "workspace:^",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {

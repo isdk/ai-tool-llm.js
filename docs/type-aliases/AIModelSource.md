@@ -8,4 +8,4 @@
 
 > **AIModelSource** = *typeof* [`AIModelSources`](../variables/AIModelSources.md)\[`number`\] & `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-settings.ts#L7)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-settings.ts:7](https://github.com/isdk/ai-tool-llm.js/blob/d6d9893dfd318ddf757b21ff3f422c985e852178/src/llm-settings.ts#L7)

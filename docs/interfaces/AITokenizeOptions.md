@@ -6,7 +6,7 @@
 
 # Interface: AITokenizeOptions
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-provider.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-provider.ts#L22)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-provider.ts:22](https://github.com/isdk/ai-tool-llm.js/blob/d6d9893dfd318ddf757b21ff3f422c985e852178/src/llm-provider.ts#L22)
 
 ## Extends
 
@@ -22,4 +22,4 @@ Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-provider.ts:22](https:/
 
 > `optional` **model**: `string`
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-provider.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-provider.ts#L23)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-provider.ts:23](https://github.com/isdk/ai-tool-llm.js/blob/d6d9893dfd318ddf757b21ff3f422c985e852178/src/llm-provider.ts#L23)

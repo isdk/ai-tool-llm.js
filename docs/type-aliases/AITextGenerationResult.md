@@ -8,4 +8,4 @@
 
 > **AITextGenerationResult** = `AIResult`\<`string`\>
 
-Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:98](https://github.com/isdk/ai-tool-llm.js/blob/5fb2d6a1dff4fec5f518e0409c4643d47c5f9643/src/llm-options.ts#L98)
+Defined in: [@isdk/ai-tools/packages/ai-tool-llm/src/llm-options.ts:98](https://github.com/isdk/ai-tool-llm.js/blob/d6d9893dfd318ddf757b21ff3f422c985e852178/src/llm-options.ts#L98)

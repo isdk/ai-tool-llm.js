@@ -157,6 +157,7 @@ export const LLMProviderSchema = {
   enabled: {type: 'boolean', value: true},
   apiUrl: {type: 'string'},
   apiKey: {type: 'string'},
+  // see enum AIModelType
   supports: {
     type: 'number',
     anyOf: [

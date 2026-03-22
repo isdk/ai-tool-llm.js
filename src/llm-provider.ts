@@ -59,7 +59,7 @@ export class LLMProvider extends ToolFunc {
       const items = this.items
       for (const name of Object.keys(items)) {
         const item = items[name]
-        if (item.isModelNameMatched(modelName)) return item
+        if (item instanceof LLMProvider && item.isModelNameMatched(modelName)) return item
       }
     } else {
       return this.getCurrentProvider()

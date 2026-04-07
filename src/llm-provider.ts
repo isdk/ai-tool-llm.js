@@ -14,6 +14,7 @@ import {
   paramsSizeToScaleStr,
   CommonError,
   ErrorCode,
+  StringTemplateFinalValue,
 } from '@isdk/ai-tool'
 import { AIPromptFitResult, AIPromptResult, AIPromptSettings, AIPromptType, AIPromptsName, PromptTemplateData, formatPrompt, getLLMParameters, getVersionPromptSettings } from '@isdk/ai-tool-prompt'
 import { AIOptions, LLMArguments } from './llm-options'
@@ -283,6 +284,7 @@ export class LLMProvider extends ToolFunc {
     }
     const lastMsg = messages[messages.length - 1]
     const add_generation_prompt = lastMsg?.role === 'assistant' ? false : options.add_generation_prompt ?? true
+    messages = new StringTemplateFinalValue(messages) as any
 
     const data: PromptTemplateData = {bos_token: '', ...options, messages, add_generation_prompt}
     if (modelInfo) {

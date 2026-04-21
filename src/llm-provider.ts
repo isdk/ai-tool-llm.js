@@ -124,7 +124,7 @@ export class LLMProvider extends ToolFunc {
     const all = options?.all
     const result = {} as {[name: string]: LLMProvider}
     for (const [name, item] of Object.entries(items)) {
-      if (all || item.enabled) {
+      if (item instanceof LLMProvider && (all || item.enabled)) {
         if (!filter || item.isModelNameMatched(name, filter)) {
           result[name] = item
         }

@@ -310,7 +310,7 @@ export class LLMProvider extends ToolFunc {
     if (Array.isArray(text)) {
       const prompt = await this.formatPrompt(text, model, options as any)
       if (!prompt) {throw new NotFoundError('ChatTemplate:'+ model, 'LLMProvider.tokenize')}
-      text = prompt
+      text = prompt as string
     }
     return encodeLLMTokens(text, model)
   }
